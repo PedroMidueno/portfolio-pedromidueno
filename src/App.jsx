@@ -1,21 +1,11 @@
-import { useSelector, useDispatch } from "react-redux"
-import { changeLanguage, changeTheme } from "./redux/slices/settingSlice";
+import { useSelector } from "react-redux"
+import ThemeSwitch from "./components/ThemeSwitch";
 
 export default function App() {
-    const dispatch = useDispatch()
 
     const { lang, theme } = useSelector(state => {
         return state.settings
     })
-
-    const changeLang = () => {
-        console.log('entra');
-        dispatch(changeLanguage())
-    }
-
-    const changeTema = () => {
-        dispatch(changeTheme())
-    }
 
     return (
         <>
@@ -24,8 +14,7 @@ export default function App() {
             <h3>Tema: {theme}</h3>
             <br />
 
-            <button onClick={changeLang}>Cambiar idioma</button>
-            <button onClick={changeTema}>Cambiar tema</button>
+            <ThemeSwitch />
         </>
     )
 }

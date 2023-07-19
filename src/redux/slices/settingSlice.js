@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import { ES, EN, LIGHT, DARK } from '../../config/consts'
 
 const initialState = {
-    theme: LIGHT,
+    theme: DARK,
     lang: ES
 }
 
