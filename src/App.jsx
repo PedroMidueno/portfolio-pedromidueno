@@ -1,13 +1,15 @@
 import { useSelector } from "react-redux"
 import { ThemeSwitch } from "./components/ThemeSwitch";
 import { LanguageSwitch } from "./components/LanguageSwitch";
-
+import { handleBodyThemeChange } from "./utils/handleBodyTheme";
 
 export default function App() {
 
     const { lang, theme } = useSelector(state => {
         return state.settings
     })
+
+    handleBodyThemeChange(theme)
 
     return (
         <>

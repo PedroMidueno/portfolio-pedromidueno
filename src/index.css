@@ -10,7 +10,14 @@
 }
 
 body{
-  background: red;
+  background: var(--dark-color);
+  color: var(--light-color);
+  transition: all .3s ease;
+}
+
+body.light {
+  background: var(--light-color);
+  color: var(--dark-color);
 }
 
 
