@@ -1,5 +1,7 @@
 import { useSelector } from "react-redux"
-import ThemeSwitch from "./components/ThemeSwitch";
+import { ThemeSwitch } from "./components/ThemeSwitch";
+import { LanguageSwitch } from "./components/LanguageSwitch";
+
 
 export default function App() {
 
@@ -15,6 +17,8 @@ export default function App() {
             <br />
 
             <ThemeSwitch />
+            <br />
+            <LanguageSwitch />
         </>
     )
 }

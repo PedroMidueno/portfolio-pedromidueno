@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { changeTheme } from '../redux/slices/settingSlice'
 import { LIGHT } from '../config/consts'
 
-const ThemeSwitch = () => {
+export const ThemeSwitch = () => {
     const { theme } = useSelector(state => {
         return state.settings
     })
@@ -13,13 +13,13 @@ const ThemeSwitch = () => {
 
     const switchTheme = () => {
         const themeSwitch = document.getElementById('theme-switch')
-        themeSwitch.classList.toggle(styles.active)
+        themeSwitch.classList.toggle(styles.light)
         dispatch(changeTheme())
     }
 
     return (
         <button
-            className={`${styles.switch} ${theme === LIGHT ? styles.active : null}`}
+            className={`${styles.switch} ${theme === LIGHT ? styles.light : null}`}
             id="theme-switch"
             onClick={switchTheme}
         >
@@ -33,4 +33,3 @@ const ThemeSwitch = () => {
     )
 }
 
-export default ThemeSwitch
