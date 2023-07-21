@@ -24,10 +24,10 @@ export const ThemeSwitch = () => {
             onClick={switchTheme}
         >
             <span>
-                <FontAwesomeIcon icon={faSun} />
+                <FontAwesomeIcon icon={faMoon} />
             </span>
             <span>
-                <FontAwesomeIcon icon={faMoon} />
+                <FontAwesomeIcon icon={faSun} />
             </span>
         </button>
     )

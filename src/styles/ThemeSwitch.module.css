@@ -16,11 +16,11 @@
     display: block;
     background: none;
     font-size: 18px;
-    color: var(--light-color);
+    color: #f1ba0a;
 }
 
 .switch span:nth-child(1) {
-   color: #ff8800;
+   color: #ff8c00;
 }
 
 .switch::after{
