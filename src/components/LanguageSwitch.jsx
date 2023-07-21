@@ -1,5 +1,5 @@
-import en from '../assets/img/en.png'
-import es from '../assets/img/es.png'
+import en from '../assets/images/en.png'
+import es from '../assets/images/es.png'
 import styles from '../styles/LanguageSwitch.module.css'
 import { useDispatch, useSelector } from 'react-redux'
 import { changeLanguage } from '../redux/slices/settingSlice'
