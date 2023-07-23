@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import settingReducer from './slices/settingSlice'
+import UISettingsReducer from './slices/UISettingSlice'
 
 export const store = configureStore({
     reducer: {
-        settings: settingReducer
+        UISettings: UISettingsReducer
     }
 })

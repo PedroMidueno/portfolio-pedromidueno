@@ -1,14 +1,14 @@
 import styles from '../styles/ThemeSwitch.module.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
-import { useDispatch, useSelector } from "react-redux";
-import { changeTheme } from '../redux/slices/settingSlice'
+import { useDispatch } from "react-redux";
+import { changeTheme } from '../redux/slices/UISettingSlice'
 import { LIGHT } from '../config/consts'
+import { useUISettings } from '../hooks/useUISettings';
 
 export const ThemeSwitch = () => {
-    const { theme } = useSelector(state => {
-        return state.settings
-    })
+    const { theme } = useUISettings()
+
     const dispatch = useDispatch()
 
     const switchTheme = () => {

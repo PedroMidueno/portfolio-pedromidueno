@@ -20,5 +20,9 @@ body.light {
   color: var(--dark-color);
 }
 
+#app{
+  overflow: hidden;
+}
+
 
 

@@ -1,8 +1,8 @@
 import { useSelector } from "react-redux";
 
-export const useGlobalSettings = () => {
+export const useUISettings = () => {
     const { lang, theme } = useSelector(state => {
-        return state.settings
+        return state.UISettings
     })
 
     return { lang, theme }

@@ -6,12 +6,11 @@ const initialState = {
     lang: ES
 }
 
-export const settingSlice = createSlice({
-    name: 'settings',
+export const UISettingsSlice = createSlice({
+    name: 'UISettings',
     initialState,
     reducers: {
         changeLanguage: (state, action) => {
-            console.log('entra al slice');
             if (state.lang === ES) state.lang = EN
             else state.lang = ES
         },
@@ -22,5 +21,5 @@ export const settingSlice = createSlice({
     }
 })
 
-export const { changeLanguage, changeTheme } = settingSlice.actions
-export default settingSlice.reducer
+export const { changeLanguage, changeTheme } = UISettingsSlice.actions
+export default UISettingsSlice.reducer

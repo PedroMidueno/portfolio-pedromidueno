@@ -1,14 +1,13 @@
 import en from '../assets/images/en.png'
 import es from '../assets/images/es.png'
 import styles from '../styles/LanguageSwitch.module.css'
-import { useDispatch, useSelector } from 'react-redux'
-import { changeLanguage } from '../redux/slices/settingSlice'
+import { useDispatch } from 'react-redux'
+import { changeLanguage } from '../redux/slices/UISettingSlice'
 import { EN, LIGHT } from '../config/consts'
+import { useUISettings } from '../hooks/useUISettings'
 
 export const LanguageSwitch = () => {
-    const { lang, theme } = useSelector(state => {
-        return state.settings
-    })
+    const { lang, theme } = useUISettings()
     const dispatch = useDispatch()
 
     const switchLang = () => {
@@ -19,8 +18,8 @@ export const LanguageSwitch = () => {
     return (
         <button
             className={`${styles.switch} 
-            ${lang === EN ? styles.english : null}
-            ${theme === LIGHT ? styles.light : null}`}
+            ${lang === EN && styles.english}
+            ${theme === LIGHT && styles.light}`}
             onClick={switchLang}
         >
             <div className={styles.flags} id='flags' >
