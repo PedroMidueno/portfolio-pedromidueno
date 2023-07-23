@@ -6,7 +6,7 @@ import { changeTheme } from '../redux/slices/UISettingSlice'
 import { LIGHT } from '../config/consts'
 import { useUISettings } from '../hooks/useUISettings';
 
-export const ThemeSwitch = () => {
+const ThemeSwitch = () => {
     const { theme } = useUISettings()
 
     const dispatch = useDispatch()
@@ -32,4 +32,6 @@ export const ThemeSwitch = () => {
         </button>
     )
 }
+
+export default ThemeSwitch
 

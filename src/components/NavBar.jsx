@@ -1,12 +1,12 @@
-import { CustomLink } from "./CustomLink"
+import CustomLink from "./CustomLink"
 import { useUISettings } from '../hooks/useUISettings'
 import { ES, EN, LIGHT } from '../config/consts'
 import { navBar } from '../config/languages'
 import styles from '../styles/NavBar.module.css'
-import { ThemeSwitch } from "./ThemeSwitch"
-import { LanguageSwitch } from "./LanguageSwitch"
+import ThemeSwitch from "./ThemeSwitch"
+import LanguageSwitch from "./LanguageSwitch"
 
-export const NavBar = () => {
+const NavBar = () => {
     const { theme, lang } = useUISettings()
 
     return (
@@ -33,3 +33,5 @@ export const NavBar = () => {
         </header>
     )
 }
+
+export default NavBar

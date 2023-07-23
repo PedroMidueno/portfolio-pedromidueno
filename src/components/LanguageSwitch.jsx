@@ -6,7 +6,7 @@ import { changeLanguage } from '../redux/slices/UISettingSlice'
 import { EN, LIGHT } from '../config/consts'
 import { useUISettings } from '../hooks/useUISettings'
 
-export const LanguageSwitch = () => {
+const LanguageSwitch = () => {
     const { lang, theme } = useUISettings()
     const dispatch = useDispatch()
 
@@ -29,4 +29,6 @@ export const LanguageSwitch = () => {
         </button>
     )
 }
+
+export default LanguageSwitch
 

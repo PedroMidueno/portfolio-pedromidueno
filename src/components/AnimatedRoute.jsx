@@ -1,9 +1,9 @@
 import { useRoute } from 'wouter'
 import { Transition } from 'react-transition-group'
-import { useRef, Fragment } from 'react'
+import { useRef } from 'react'
 import { defaultStyles, transitionStyles, duration } from '../config/consts'
 
-export const AnimatedRoute = ({ path, children }) => {
+const AnimatedRoute = ({ path, children }) => {
     const [match] = useRoute(path)
     const nodeRef = useRef(null)
 
@@ -21,3 +21,5 @@ export const AnimatedRoute = ({ path, children }) => {
         </Transition>
     )
 }
+
+export default AnimatedRoute

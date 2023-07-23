@@ -3,7 +3,7 @@ import styles from '../styles/CustomLink.module.css'
 import { useUISettings } from '../hooks/useUISettings'
 import { LIGHT } from '../config/consts'
 
-export const CustomLink = ({ path, children }) => {
+const CustomLink = ({ path, children }) => {
     const [match] = useRoute(path)
     const { theme } = useUISettings()
 
@@ -15,3 +15,5 @@ export const CustomLink = ({ path, children }) => {
         </Link >
     )
 }
+
+export default CustomLink

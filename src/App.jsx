@@ -1,10 +1,11 @@
+import { lazy, Suspense } from 'react'
 import { handleBodyThemeChange } from "./utils/handleBodyTheme";
 import { useUISettings } from "./hooks/useUISettings";
-import { NavBar } from "./components/NavBar";
-import { Home } from './components/Home'
-import { About } from './components/About'
-import { Contact } from './components/Contact'
-import { AnimatedRoute } from "./components/AnimatedRoute";
+const NavBar = lazy(() => import('./components/NavBar'))
+const Home = lazy(() => import('./components/Home'))
+const About = lazy(() => import('./components/About'))
+const Contact = lazy(() => import('./components/Contact'))
+const AnimatedRoute = lazy(() => import('./components/AnimatedRoute'))
 
 export default function App() {
 
@@ -12,7 +13,7 @@ export default function App() {
     handleBodyThemeChange(theme)
 
     return (
-        <>
+        <Suspense fallback={<div>Loading...</div>}>
             <NavBar />
             <h1>Mi portfolio Web</h1>
             <h3>Idioma: {lang}</h3>
@@ -32,6 +33,6 @@ export default function App() {
             </AnimatedRoute>
 
 
-        </>
+        </Suspense >
     )
 }
