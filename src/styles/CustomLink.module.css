@@ -1,13 +1,16 @@
 .link {
     color: var(--light-color);
-    font-family: 'Nunito';
-    font-weight: var(--desktop-navigation-font-weigth);
+    font-family: 'Roboto-Regular';
     text-decoration: none;
-    transition: all .3s ease;
+    padding-bottom: 0;
+    font-size: var(--desktop-navigation-font-size);
+    transition: all .3s ease;   
 }
 
 .active {
-    font-weight: 900;
+    /* text-shadow: 0px 0px 2px var(--light-color); */
+    font-size: calc(var(--desktop-navigation-font-size) + 1px);
+    font-weight: bold;
 }
 
 .light {
