@@ -1,0 +1,15 @@
+.link {
+    color: var(--light-color);
+    font-family: 'Nunito';
+    font-weight: var(--desktop-navigation-font-weigth);
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.active {
+    font-weight: 900;
+}
+
+.light {
+    color: var(--dark-color);
+}

@@ -1,15 +1,41 @@
-*{
+@font-face {
+  font-family: 'Nunito';
+  src: url('assets/fonts/Nunito-VariableFont.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url('assets/fonts/NunitoSans-VariableFont.ttf') format('truetype');
+}
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 :root {
+  /* UISettings variables*/
   --light-color: #F8F9FA;
   --dark-color: #11151C;
+
+  /*Desktop font size variables*/
+  --desktop-title-font-size: 64px;
+  --desktop-subtitle-font-size: 32px;
+  --desktop-paragraph-font-size: 24px;
+  --desktop-navigation-font-size: 30px;
+  --desktop-captions-font-size: 16px;
+
+  /* Desktop fot weigth variables*/
+  --desktop-title-font-weigth: 700;
+  --desktop-subtitle-font-weigth: 600;
+  --desktop-paragraph-font-weigth: 400;
+  --desktop-navigation-font-weigth: 700;
+  --desktop-captions-font-weigth: 400;
+
 }
 
-body{
+body {
   background: var(--dark-color);
   color: var(--light-color);
   transition: all .3s ease;
@@ -20,9 +46,6 @@ body.light {
   color: var(--dark-color);
 }
 
-#app{
+#app {
   overflow: hidden;
 }
-
-
-
