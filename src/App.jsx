@@ -1,6 +1,7 @@
 import { lazy, Suspense } from 'react'
 import { handleBodyThemeChange } from "./utils/handleBodyTheme";
 import { useUISettings } from "./hooks/useUISettings";
+import Loader from './components/Loader';
 const NavBar = lazy(() => import('./components/NavBar'))
 const Home = lazy(() => import('./components/Home'))
 const About = lazy(() => import('./components/About'))
@@ -13,7 +14,7 @@ export default function App() {
     handleBodyThemeChange(theme)
 
     return (
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<Loader />}>
             <NavBar />
 
             <AnimatedRoute path='/'>
