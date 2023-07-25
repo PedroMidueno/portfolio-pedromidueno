@@ -15,10 +15,6 @@ export default function App() {
     return (
         <Suspense fallback={<div>Loading...</div>}>
             <NavBar />
-            <h1>Mi portfolio Web</h1>
-            <h3>Idioma: {lang}</h3>
-            <h3>Tema: {theme}</h3>
-            <br />
 
             <AnimatedRoute path='/'>
                 <Home />
@@ -31,7 +27,6 @@ export default function App() {
             <AnimatedRoute path='/contact'>
                 <Contact />
             </AnimatedRoute>
-
 
         </Suspense >
     )

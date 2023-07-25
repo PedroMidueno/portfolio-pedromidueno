@@ -43,6 +43,8 @@
   --desktop-navigation-font-weigth: 600;
   --desktop-captions-font-weigth: 400;
 
+  --transition-settings: all .3s ease;
+
 }
 
 body {
@@ -57,5 +59,8 @@ body.light {
 }
 
 #app {
-  overflow: hidden;
+  /* border: 1px solid palevioletred; */
+  max-width: 83%;
+  margin: 0 auto;
+  min-height: 100vh;
 }

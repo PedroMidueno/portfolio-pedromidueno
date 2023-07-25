@@ -1,15 +1,19 @@
 .link {
+    /* border: 1px solid red; */
     color: var(--light-color);
     font-family: 'Roboto-Regular';
     text-decoration: none;
     padding-bottom: 0;
     font-size: var(--desktop-navigation-font-size);
-    transition: all .3s ease;   
+    transition: var(--transition-settings);
+    min-width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .active {
-    /* text-shadow: 0px 0px 2px var(--light-color); */
-    font-size: calc(var(--desktop-navigation-font-size) + 1px);
+    transform: translateY(-1px);
     font-weight: bold;
 }
 
