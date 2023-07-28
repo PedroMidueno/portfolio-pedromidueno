@@ -10,6 +10,8 @@
     padding-top: 3px;
     cursor: pointer;
     transition: var(--transition-settings);
+    min-width: 40px;
+    min-height: 40px;
 }
 
 .switch.light{

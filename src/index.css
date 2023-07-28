@@ -21,7 +21,8 @@
 
 :root {
   /* UISettings variables*/
-  --light-color: #F8F9FA;
+  /* --light-color: #F8F9FA; */
+  --light-color: #eeeeee;
   --dark-color: #11151C;
 
   /*Desktop font size variables*/
