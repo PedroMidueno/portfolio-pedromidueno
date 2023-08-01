@@ -7,7 +7,6 @@ const Home = lazy(() => import('./components/Home'))
 const About = lazy(() => import('./components/About'))
 const Contact = lazy(() => import('./components/Contact'))
 const AnimatedRoute = lazy(() => import('./components/AnimatedRoute'))
-const NavBarMobile = lazy(() => import('./components/NavBarMobile'))
 
 export default function App() {
 
@@ -17,7 +16,6 @@ export default function App() {
     return (
         <Suspense fallback={<Loader />}>
             <NavBar />
-            <NavBarMobile />
 
             <AnimatedRoute path='/'>
                 <Home />
