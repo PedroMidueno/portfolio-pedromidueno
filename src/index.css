@@ -48,6 +48,7 @@ body {
   background: var(--dark-color);
   color: var(--light-color);
   transition: all .3s ease;
+  overflow-x: hidden;
 }
 
 body.light {
