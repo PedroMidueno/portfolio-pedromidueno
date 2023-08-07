@@ -16,21 +16,21 @@ nav {
     margin-bottom: 10px;
     padding: 0 50px;
     transition: var(--transition-settings);
+    position: relative;
 }
 
 .logo {
     /* border: 1px solid red; */
-    height: 30px;
-    max-height: 30px;
+    height: 35px;
+    max-height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 20%;
-    width: 30%;
 }
 
 .logo img {
-    width: 100%;
+    width: auto;
+    height: 100%;
 }
 
 .links {
@@ -38,28 +38,106 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    width: 60%;
+    justify-content: space-around;
+    gap: 10px;
+    width: 50%;
 }
 
 nav.light {
     border: 3px solid var(--dark-color);
-    background: var(--light-color);  
+    background: var(--light-color);
 }
 
-@media screen and (max-width: 1169px){
-    .logo {
-        min-width: 25%;
-        width: 25%;
+.menu_button {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border: 2px solid var(--light-color);
+    border-radius: 10px;
+    background: none;
+    color: var(--light-color);
+    transition: var(--transition-settings);
+    display: none;
+}
+
+.menu_button:active {
+    font-size: 18px;
+}
+
+.menu_button.light {
+    border: 2px solid var(--dark-color);
+    color: var(--dark-color);
+}
+
+.switches{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+@media screen and (max-width: 959px) {
+    nav {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 829px) {
+    nav {
+        padding: 0 30px;
+    }
+
+    .menu_button {
+        display: block;
     }
 
     .links{
-        width: 70%;
+        border: 1px solid var(--light-color);
+        border-radius: 10px;
+        position: absolute;
+        flex-direction: column;
+        align-items: stretch;
+        z-index: 1;
+        left: unset;
+        right: 0;
+        top: 70px;
+        gap: 0;
+        width: 40%;
+        overflow: hidden;
+        border-bottom: none;
+        transform: translateX(120%);
+        transition: var(--transition-settings);
+    }
+
+    .links.visible {
+        transform: translateX(0);       
+    }
+
+    .links.light {
+        border: 1px solid var(--dark-color);
+    }
+}
+@media screen and (max-width: 449px) {
+    .links {
+        width: 100%;
+    }
+
+    .switches {
+        gap: 10px;
+    }
+
+    nav{
+        padding: 0 20px;
     }
 }
 
-@media screen and (max-width: 959px){
-    nav {
-        padding: 0 20px;
+@media screen and (max-width: 369px) {
+    nav{
+        padding: 0 10px;
     }
 }

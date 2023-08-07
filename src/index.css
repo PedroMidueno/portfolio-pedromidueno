@@ -17,6 +17,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 :root {
@@ -59,4 +60,17 @@ body.light {
   max-width: 83%;
   margin: 0 auto;
   min-height: 100vh;
+}
+
+@media screen and (max-width: 829px){
+  #app {
+    max-width: 90%;    
+  }
+}
+
+@media screen and (max-width: 449px) {
+  #app {
+    max-width: 100%;
+    padding: 10px;
+  }
 }

@@ -1,5 +1,5 @@
 .link {
-    /* border: 1px solid red; */
+    /* border: 1px solid green; */
     color: var(--light-color);
     font-family: 'Roboto-Regular';
     text-decoration: none;
@@ -10,6 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .active {
@@ -19,4 +20,28 @@
 
 .light {
     color: var(--dark-color);
+}
+
+@media screen and (max-width: 829px){
+    .link{
+        border-bottom: 2px solid var(--light-color);
+        padding: 5px 0;
+        transition: none;
+        background: var(--dark-color);
+    }
+
+    .light {
+        border-bottom: 2px solid var(--dark-color);
+        background: var(--light-color);
+    }
+
+    .link:active {
+        background: var(--light-color);
+        color: var(--dark-color);
+    }
+
+    .light:active{
+        background: var(--dark-color);
+        color: var(--light-color);
+    }
 }
