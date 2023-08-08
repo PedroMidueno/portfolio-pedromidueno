@@ -2,7 +2,7 @@
 export const ES = 'es'
 export const EN = 'en'
 
-//themes
+// themes
 export const LIGHT = 'light'
 export const DARK = 'dark'
 
@@ -10,38 +10,37 @@ export const DARK = 'dark'
 export const duration = 200
 
 const entering = {
-    position: 'absolute',
-    display: 'block',
-    opacity: 0,
-    transform: 'scale(1.1)'
+  position: 'absolute',
+  display: 'block',
+  opacity: 0,
+  transform: 'scale(1.1)'
 }
 
 const entered = {
-    display: 'block',
-    opacity: 1,
-    transform: 'scale(1)'
+  display: 'block',
+  opacity: 1,
+  transform: 'scale(1)'
 }
 
 const exiting = {
-    display: 'block',
-    opacity: 0,
-    transform: 'scale(0.9)'
+  display: 'block',
+  opacity: 0,
+  transform: 'scale(0.9)'
 }
 
 const exited = {
-    display: 'none',
-    opacity: 0,
+  display: 'none',
+  opacity: 0
 }
 
 export const defaultStyles = {
-    opacity: 0,
-    display: 'none',
-    transition: `all ${duration}ms ease`
+  opacity: 0,
+  display: 'none',
+  transition: `all ${duration}ms ease`
 }
 export const transitionStyles = {
-    entering,
-    entered,
-    exiting,
-    exited
+  entering,
+  entered,
+  exiting,
+  exited
 }
-
