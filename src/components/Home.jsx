@@ -1,6 +1,10 @@
+import Tech from './Tech'
+
 const Home = () => {
   return (
-    <h1>Home</h1>
+    <main>
+      <Tech />
+    </main>
   )
 }
 

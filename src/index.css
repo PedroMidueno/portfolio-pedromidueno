@@ -27,7 +27,7 @@
   --dark-color: #11151C;
 
   /*Desktop font size variables*/
-  --desktop-title-font-size: 64px;
+  --desktop-title-font-size: 30px;
   --desktop-subtitle-font-size: 32px;
   --desktop-paragraph-font-size: 24px;
   --desktop-navigation-font-size: 20px;
@@ -41,6 +41,19 @@
   --desktop-captions-font-weigth: 400;
 
   --transition-settings: all .3s ease;
+
+  /* Shadow colors*/
+  --html-shadow-color: #fb8500;
+  --css-shadow-color: #48cae4;
+  --js-shadow-color: #ffee32;
+  --react-shadow-color: #90e0ef;
+  --redux-shadow-color: #c77dff;
+  --node-shadow-color: #55a630;
+  --express-shadow-color: #495057;
+  --postgre-shadow-color: #90e0ef;
+  --sequelize-shadow-color: #00b4d8;
+  --git-shadow-color: #f77f00;
+
 
 }
 

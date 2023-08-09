@@ -14,3 +14,8 @@ export const navBar = {
     en: 'Contact'
   }
 }
+
+export const Tech = {
+  es: 'Tecnologías y herramientas',
+  en: 'Tech and tools'
+}

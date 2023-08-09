@@ -1,0 +1,67 @@
+.title {
+  /* border: 1px solid red; */
+  font-size: var(--desktop-title-font-size);
+  font-family: 'Roboto-Regular';
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tech_wrapper {
+  /* border: 1px solid red; */
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px auto;
+}
+
+.tech_wrapper img {
+  width: 100px;
+  height: auto;
+  transition: var(--transition-settings);
+}
+
+.tech_wrapper img:hover {
+  transform: scale(1.1);
+}
+
+img[alt='HTML logo']:hover{
+  filter: drop-shadow(1px 1px 8px var(--html-shadow-color));  
+}
+
+img[alt='CSS logo']:hover{
+  filter: drop-shadow(1px 1px 8px var(--css-shadow-color));  
+}
+
+img[alt='JavaScript logo']:hover{
+  filter: drop-shadow(1px 1px 8px var(--js-shadow-color));  
+}
+
+img[alt='React logo']:hover{
+  filter: drop-shadow(1px 1px 8px var(--react-shadow-color));  
+}
+
+img[alt='Redux logo']:hover{
+  filter: drop-shadow(1px 1px 8px var(--redux-shadow-color));  
+}
+
+img[alt='Node logo']:hover{
+  filter: drop-shadow(1px 1px 8px var(--node-shadow-color));  
+}
+
+img[alt='Express logo']:hover{
+  filter: drop-shadow(1px 1px 8px var(--express-shadow-color));  
+}
+
+img[alt='Postgre logo']:hover{
+  filter: drop-shadow(1px 1px 8px var(--postgre-shadow-color));  
+}
+
+img[alt='Sequelize logo']:hover{
+  filter: drop-shadow(1px 1px 8px var(--sequelize-shadow-color));  
+}
+
+img[alt='Git logo']:hover{
+  filter: drop-shadow(1px 1px 8px var(--git-shadow-color));  
+}
