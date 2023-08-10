@@ -65,3 +65,37 @@ img[alt='Sequelize logo']:hover{
 img[alt='Git logo']:hover{
   filter: drop-shadow(1px 1px 8px var(--git-shadow-color));  
 }
+
+@media screen and (max-width: 849px) {
+  .tech_wrapper img {
+    width: 80px;
+  }
+
+  .title {
+    font-size: calc(var(--desktop-title-font-size) - 2px);
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .tech_wrapper{
+    width: 100%;
+  }
+
+  .tech_wrapper img {
+    width: 70px;
+  }
+
+  .title {
+    font-size: calc(var(--desktop-title-font-size) - 4px);
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .tech_wrapper img {
+    width: 50px;
+  }
+
+  .title {
+    font-size: calc(var(--desktop-title-font-size) - 6px);
+  }
+}
