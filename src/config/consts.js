@@ -44,3 +44,6 @@ export const transitionStyles = {
   exiting,
   exited
 }
+
+// Routes
+export const routes = ['/', '/about', '/contact']

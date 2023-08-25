@@ -1,5 +1,4 @@
-import en from '../assets/svg/en.svg'
-import es from '../assets/svg/es.svg'
+import { en, es } from '../assets/svg/'
 import styles from '../styles/LanguageSwitch.module.css'
 import { useDispatch } from 'react-redux'
 import { changeLanguage } from '../redux/slices/UISettingSlice'
