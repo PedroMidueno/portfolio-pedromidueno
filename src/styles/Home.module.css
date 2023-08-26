@@ -1,0 +1,92 @@
+section {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0 40px;
+}
+
+.presentation {
+  /* border: 1px solid violet; */
+  display: flex;
+  flex-direction: column;
+}
+
+.presentation h2 {
+  font-family: 'Nunito';
+  font-size: var(--desktop-subtitle-font-size);
+}
+
+.presentation h1 {
+  font-family: 'Nunito';
+  font-style: italic;
+  font-size: 70px;
+}
+
+.presentation span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Nunito';
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.presentation span img {
+  width: 30px;
+}
+
+section>img {
+  width: 350px;
+  /* border: 1px solid green; */
+}
+
+.buttons {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.buttons a {
+  text-decoration: none;
+}
+
+.buttons button {
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  height: 40px;
+  width: 120px;
+  border: 1px solid var(--dark-color);
+  padding-left: 15px;
+  font-family: 'Nunito';
+  font-weight: bold;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buttons button img {
+  width: 30px;
+}
+
+.buttons button:hover{
+  box-shadow: 0 0 15px #5386e4;
+  transform: scale(1.1);
+}
+
+main hr{
+  border: 2px solid var(--light-color);
+  margin-top: 20px;
+  transition: all .3s ease;
+}
+
+main hr.light{
+  border: 2px solid var(--dark-color);
+}

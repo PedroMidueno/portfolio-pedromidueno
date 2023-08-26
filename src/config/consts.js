@@ -47,3 +47,7 @@ export const transitionStyles = {
 
 // Routes
 export const routes = ['/', '/about', '/contact']
+
+// Social Links
+export const githubLink = 'https://github.com/PedroMidueno'
+export const linkedinLink = 'https://www.linkedin.com/in/pedromidueno/'

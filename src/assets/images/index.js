@@ -14,6 +14,15 @@ import git from './git.png'
 import logoDark from './logo_dark.png'
 import logoLight from './logo_light.png'
 
+// Images for main
+import music from './amor.png'
+import basketball from './pelota.png'
+import dev from './sitio-web.png'
+import geek from './technology.png'
+import github from './github.png'
+import linkedin from './linkedin.png'
+import developer from './developer.png'
+
 export {
   html,
   css,
@@ -26,5 +35,12 @@ export {
   sequelize,
   git,
   logoDark,
-  logoLight
+  logoLight,
+  music,
+  basketball,
+  dev,
+  geek,
+  github,
+  linkedin,
+  developer
 }

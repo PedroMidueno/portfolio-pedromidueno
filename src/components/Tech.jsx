@@ -8,7 +8,7 @@ const Tech = () => {
   const { lang } = useUISettings()
 
   return (
-    <section>
+    <section className={styles.tech}>
       <h3 className={styles.title}>
         {lang === ES && tech.es}
         {lang === EN && tech.en}
