@@ -104,6 +104,10 @@ body.light {
   transform: scale(1);
 }
 
+#scroll-top-button:active {
+  transform: scale(0.8);
+}
+
 @keyframes popup {
   0% {
     transform: scale(0);
