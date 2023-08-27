@@ -10,7 +10,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
+}
+
+.link:hover {
+    transform: scale(1.1);
 }
 
 .active {
@@ -22,8 +26,8 @@
     color: var(--dark-color);
 }
 
-@media screen and (max-width: 829px){
-    .link{
+@media screen and (max-width: 829px) {
+    .link {
         border-bottom: 2px solid var(--light-color);
         padding: 5px 0;
         transition: none;
@@ -40,7 +44,7 @@
         color: var(--dark-color);
     }
 
-    .light:active{
+    .light:active {
         background: var(--dark-color);
         color: var(--light-color);
     }

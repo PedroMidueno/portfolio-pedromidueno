@@ -1,0 +1,15 @@
+.projects_container {
+  /* border: 1px solid violet; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+
+.title {
+  /* border: 1px solid red; */
+  font-size: 40px;
+  font-family: 'Roboto-Regular';
+  text-align: center;
+  margin-bottom: 30px;
+}

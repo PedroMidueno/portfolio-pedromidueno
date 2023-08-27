@@ -23,6 +23,9 @@ import github from './github.png'
 import linkedin from './linkedin.png'
 import developer from './developer.png'
 
+// Images for projects
+import piCountries from './PI_countries.png'
+
 export {
   html,
   css,
@@ -42,5 +45,6 @@ export {
   geek,
   github,
   linkedin,
-  developer
+  developer,
+  piCountries
 }

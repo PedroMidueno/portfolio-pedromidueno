@@ -16,7 +16,6 @@ nav {
     margin-bottom: 10px;
     padding: 0 50px;
     transition: var(--transition-settings);
-    position: relative;
 }
 
 .logo {
@@ -74,7 +73,7 @@ nav.light {
     color: var(--dark-color);
 }
 
-.switches{
+.switches {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -96,7 +95,7 @@ nav.light {
         display: block;
     }
 
-    .links{
+    .links {
         border: 1px solid var(--light-color);
         border-radius: 10px;
         position: absolute;
@@ -115,13 +114,14 @@ nav.light {
     }
 
     .links.visible {
-        transform: translateX(0);       
+        transform: translateX(0);
     }
 
     .links.light {
         border: 1px solid var(--dark-color);
     }
 }
+
 @media screen and (max-width: 449px) {
     .links {
         width: 100%;
@@ -131,13 +131,13 @@ nav.light {
         gap: 10px;
     }
 
-    nav{
+    nav {
         padding: 0 20px;
     }
 }
 
 @media screen and (max-width: 369px) {
-    nav{
+    nav {
         padding: 0 10px;
     }
 }

@@ -15,19 +15,19 @@ const Tech = () => {
       </h3>
 
       <div className={styles.tech_wrapper}>
-        <img src={html} alt='HTML logo' />
-        <img src={css} alt='CSS logo' />
-        <img src={js} alt='JavaScript logo' />
-        <img src={react} alt='React logo' />
-        <img src={redux} alt='Redux logo' />
+        <img src={html} alt='HTML logo' title='HTML' />
+        <img src={css} alt='CSS logo' title='CSS' />
+        <img src={js} alt='JavaScript logo' title='JavaScript' />
+        <img src={react} alt='React logo' title='React' />
+        <img src={redux} alt='Redux logo' title='Redux' />
       </div>
 
       <div className={styles.tech_wrapper}>
-        <img src={node} alt='Node logo' />
-        <img src={express} alt='Express logo' />
-        <img src={postgre} alt='Postgre logo' />
-        <img src={sequelize} alt='Sequelize logo' />
-        <img src={git} alt='Git logo' />
+        <img src={node} alt='Node logo' title='Node' />
+        <img src={express} alt='Express logo' title='Express' />
+        <img src={postgre} alt='Postgre logo' title='PostgreSQL' />
+        <img src={sequelize} alt='Sequelize logo' title='Sequelize' />
+        <img src={git} alt='Git logo' title='Git' />
       </div>
     </section>
   )

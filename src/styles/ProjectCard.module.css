@@ -1,0 +1,93 @@
+.project_card {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  gap: 10px;
+  background: var(--project-card-bg);
+  border: 2px solid var(--light-color);
+  border-radius: 20px;
+  animation-name: bounce;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  transition: all .3s ease;
+  width: 320px;
+  max-width: 320px;
+}
+
+.project_card.light {
+  border: 2px solid #000;
+}
+
+.project_card:hover {
+  box-shadow: 0 0 20px var(--project-card-box-shadow);
+  animation-play-state: paused;
+  background: var(--project-card-bg-hover);
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-right: 10px;
+}
+
+.links>a {
+  font-size: 20px;
+  color: var(--light-color);
+}
+
+.image_container {
+  /* border: 1px solid green; */
+  width: 280px;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 125px;
+  min-width: 280px;
+  min-height: 125px;
+  border: 1px solid var(--light-color);
+}
+
+.image_container>img {
+  width: 100%;
+}
+
+.title {
+  font-family: 'Nunito';
+  font-weight: bold;
+  font-size: 24px;
+  align-self: center;
+  color: var(--light-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tech_container {
+  /* border: 1px solid yellow; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.tech_container>img {
+  width: 30px;
+}
+
+
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0)
+  }
+
+  50% {
+    transform: translateY(-10px)
+  }
+
+  1000% {
+    transform: translateY(0)
+  }
+}

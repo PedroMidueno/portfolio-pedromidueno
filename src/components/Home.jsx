@@ -1,4 +1,5 @@
 import Tech from './Tech'
+import Projects from './Projects'
 import styles from '../styles/Home.module.css'
 import { music, basketball, geek, dev, github, linkedin, developer } from '../assets/images'
 // import { developer } from '../assets/svg'
@@ -65,7 +66,8 @@ const Home = () => {
       <div>
         <Tech />
       </div>
-
+      <hr className={theme === LIGHT && styles.light} />
+      <Projects />
     </main>
   )
 }
