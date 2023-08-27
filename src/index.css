@@ -81,6 +81,43 @@ body.light {
   min-height: 100vh;
 }
 
+#scroll-top-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  font-size: 20px;
+  background: #00b4d8;
+  border: 1px solid #00b4d8;
+  color: #fff;
+  position: fixed;
+  right: 20px;
+  left: unset;
+  bottom: 20px;
+  top: unset;
+  cursor: pointer;
+  transform: scale(0);
+  transition: var(--transition-settings);
+}
+
+#scroll-top-button.show {
+  animation: popup .2s ease-in-out;
+  transform: scale(1);
+}
+
+@keyframes popup {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 @media screen and (max-width: 829px) {
   #app {
     max-width: 90%;
