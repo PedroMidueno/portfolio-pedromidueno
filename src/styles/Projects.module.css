@@ -12,4 +12,10 @@
   font-family: 'Roboto-Regular';
   text-align: center;
   margin-bottom: 30px;
+  color: var(--title-color-dark-mode);
+  transition: var(--transition-settings);
+}
+
+.title.light {
+  color: var(--dark-color);
 }

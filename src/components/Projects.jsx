@@ -1,14 +1,17 @@
 import { projects } from '../config/projects'
 import ProjectCard from './ProjectCard'
 import styles from '../styles/Projects.module.css'
-import { ES } from '../config/consts'
+import { ES, LIGHT } from '../config/consts'
 import { useUISettings } from '../hooks/useUISettings'
 
 const Projects = () => {
-  const { lang } = useUISettings()
+  const { lang, theme } = useUISettings()
+
   return (
     <section className={styles.projects_container}>
-      <h3 className={styles.title}>{lang === ES ? 'Proyectos' : 'Projects'}</h3>
+      <h3 className={`${styles.title} ${theme === LIGHT && styles.light}`}>
+        {lang === ES ? 'Proyectos' : 'Projects'}
+      </h3>
 
       {
         projects.map(project => {

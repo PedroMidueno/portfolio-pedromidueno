@@ -15,26 +15,26 @@ const Home = () => {
       <section>
 
         <div className={styles.presentation}>
-          <h2>
+          <h2 className={theme === LIGHT && styles.light}>
             {lang === ES && main.saludo.es}
             {lang === EN && main.saludo.en}
           </h2>
           <h1>Pedro Midueño</h1>
-          <span>
+          <span className={theme === LIGHT && styles.light}>
             {lang === ES && main.dev.es}
             {lang === EN && main.dev.en}
             <img src={dev} alt='' />
           </span>
-          <span>
+          <span className={theme === LIGHT && styles.light}>
             Geek
             <img src={geek} alt='' />
           </span>
-          <span>
+          <span className={theme === LIGHT && styles.light}>
             {lang === ES && main.nba.es}
             {lang === EN && main.nba.en}
             <img src={basketball} alt='' />
           </span>
-          <span>
+          <span className={theme === LIGHT && styles.light}>
             {lang === ES && main.music.es}
             {lang === EN && main.music.en}
             <img src={music} alt='' />
@@ -42,19 +42,14 @@ const Home = () => {
 
           <div className={styles.buttons}>
             <a href={linkedinLink} target='_blank' rel='noreferrer'>
-              <button>
-                <img src={linkedin} alt='' />
-                LinkedIn
-              </button>
+              <img src={linkedin} alt='' />
+              LinkedIn
             </a>
 
             <a href={githubLink} target='_blank' rel='noreferrer'>
-              <button>
-                <img src={github} alt='' />
-                GitHub
-              </button>
+              <img src={github} alt='' />
+              GitHub
             </a>
-
           </div>
         </div>
 
@@ -69,6 +64,7 @@ const Home = () => {
       <hr className={theme === LIGHT && styles.light} />
       <Projects />
     </main>
+
   )
 }
 

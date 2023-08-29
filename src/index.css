@@ -22,9 +22,9 @@
 
 :root {
   /* UISettings variables*/
-  /* --light-color: #F8F9FA; */
   --light-color: #eeeeee;
   --dark-color: #11151C;
+  --title-color-dark-mode: #ced4da;
 
   /*Desktop font size variables*/
   --desktop-title-font-size: 48px;

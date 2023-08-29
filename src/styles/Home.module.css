@@ -16,12 +16,19 @@ section {
 .presentation h2 {
   font-family: 'Nunito';
   font-size: var(--desktop-subtitle-font-size);
+  color: var(--title-color-dark-mode);
+  transition: var(--transition-settings);
+}
+
+.presentation h2.light {
+  color: var(--dark-color);
 }
 
 .presentation h1 {
   font-family: 'Nunito';
   font-style: italic;
   font-size: 70px;
+  color: #f15025;
 }
 
 .presentation span {
@@ -31,6 +38,12 @@ section {
   font-family: 'Nunito';
   font-size: 24px;
   font-weight: bold;
+  color: var(--title-color-dark-mode);
+  transition: var(--transition-settings);
+}
+
+.presentation span.light {
+  color: var(--dark-color);
 }
 
 .presentation span img {
@@ -53,9 +66,6 @@ section>img {
 
 .buttons a {
   text-decoration: none;
-}
-
-.buttons button {
   border-radius: 30px;
   display: flex;
   align-items: center;
@@ -67,16 +77,18 @@ section>img {
   padding-left: 15px;
   font-family: 'Nunito';
   font-weight: bold;
+  font-size: 14px;
   background: #fff;
   cursor: pointer;
   transition: all 0.3s ease;
+  color: var(--dark-color);
 }
 
-.buttons button img {
-  width: 30px;
+.buttons img {
+  width: 25px;
 }
 
-.buttons button:hover {
+.buttons a:hover {
   box-shadow: 0 0 15px #5386e4;
   transform: scale(1.1);
 }

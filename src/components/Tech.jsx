@@ -1,15 +1,15 @@
 import { html, css, js, react, redux, node, express, postgre, sequelize, git } from '../assets/images'
 import styles from '../styles/Tech.module.css'
 import { useUISettings } from '../hooks/useUISettings'
-import { ES, EN } from '../config/consts'
+import { ES, EN, LIGHT } from '../config/consts'
 import { Tech as tech } from '../config/languages'
 
 const Tech = () => {
-  const { lang } = useUISettings()
+  const { lang, theme } = useUISettings()
 
   return (
     <section className={styles.tech}>
-      <h3 className={styles.title}>
+      <h3 className={`${styles.title} ${theme === LIGHT && styles.light}`}>
         {lang === ES && tech.es}
         {lang === EN && tech.en}
       </h3>
