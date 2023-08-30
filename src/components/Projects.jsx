@@ -23,6 +23,7 @@ const Projects = () => {
               repo={project.repo}
               deploy={project.deploy}
               tech={project.tech}
+              description={project.description}
             />
           )
         })

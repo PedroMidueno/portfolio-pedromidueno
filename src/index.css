@@ -55,7 +55,7 @@
   --git-shadow-color: #f77f00;
 
   /*Project cards colors*/
-  --project-card-bg: #190028;
+  --project-card-bg: linear-gradient(135deg, #45484d 0%,#000000 100%);
   --project-card-box-shadow: #4a006f;
   --project-card-bg-hover: #220135;
 
