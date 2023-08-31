@@ -1,9 +1,11 @@
 .projects_container {
   /* border: 1px solid violet; */
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding-bottom: 20px;
+  gap: 30px;
 }
 
 .title {

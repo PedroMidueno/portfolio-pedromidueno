@@ -9,6 +9,7 @@ import express from './express.png'
 import postgre from './postgre.png'
 import sequelize from './sequelize.png'
 import git from './git.png'
+import next from './next.png'
 
 // Logos
 import logoDark from './logo_dark.png'
@@ -25,6 +26,7 @@ import developer from './developer.png'
 
 // Images for projects
 import piCountries from './PI_countries.png'
+import emprendar from './emprendar.png'
 
 export {
   html,
@@ -37,6 +39,7 @@ export {
   postgre,
   sequelize,
   git,
+  next,
   logoDark,
   logoLight,
   music,
@@ -46,5 +49,6 @@ export {
   github,
   linkedin,
   developer,
-  piCountries
+  piCountries,
+  emprendar
 }

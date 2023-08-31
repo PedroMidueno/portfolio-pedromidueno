@@ -8,27 +8,28 @@ const Projects = () => {
   const { lang, theme } = useUISettings()
 
   return (
-    <section className={styles.projects_container}>
+    <>
       <h3 className={`${styles.title} ${theme === LIGHT && styles.light}`}>
         {lang === ES ? 'Proyectos' : 'Projects'}
       </h3>
-
-      {
-        projects.map(project => {
-          return (
-            <ProjectCard
-              key={project.title}
-              title={project.title}
-              image={project.image}
-              repo={project.repo}
-              deploy={project.deploy}
-              tech={project.tech}
-              description={project.description}
-            />
-          )
-        })
-      }
-    </section>
+      <section className={styles.projects_container}>
+        {
+          projects.map(project => {
+            return (
+              <ProjectCard
+                key={project.title}
+                title={project.title}
+                image={project.image}
+                repo={project.repo}
+                deploy={project.deploy}
+                tech={project.tech}
+                description={project.description}
+              />
+            )
+          })
+        }
+      </section>
+    </>
   )
 }
 
