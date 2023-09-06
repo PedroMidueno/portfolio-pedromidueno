@@ -1,6 +1,10 @@
+import Education from './Education'
+
 const About = () => {
   return (
-    <h1>About</h1>
+    <section>
+      <Education />
+    </section>
   )
 }
 

@@ -1,0 +1,87 @@
+.container {
+  /* border: 1px solid red; */
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title {
+  /* border: 1px solid red; */
+  font-size: 40px;
+  font-family: 'Roboto-Regular';
+  text-align: center;
+  color: var(--title-color-dark-mode);
+  transition: var(--transition-settings);
+}
+
+.title.light {
+  color: var(--dark-color);
+}
+
+.education {
+  /* border: 1px solid green; */
+  display: flex;  
+  align-items: center;
+  gap: 100px;
+  padding: 0px 20px;
+}
+
+.education>img {
+  /* border: 1px solid violet; */
+  height: 300px;
+}
+
+.education_box {
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.education_box::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 120%;
+  background: #0f4c5c;
+  left: -10px;
+  top: 10px;
+}
+
+.education_box::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background: #0f4c5c;
+  left: -15px;
+  top: 10px;
+}
+
+.degree {
+  font-family: 'Roboto-Regular';
+  font-size: 1.6rem;
+  color: #e36414;
+  font-weight: bold;
+}
+
+.school {
+  font-family: 'Nunito';
+  font-style: italic;
+  font-size: 1.2rem;
+  color: gray;
+}
+
+.description {
+  font-family: 'Nunito';
+  color: var(--light-color);
+  font-size: 1rem;
+  transition: var(--transition-settings);
+}
+
+.description.light {
+  color: var(--dark-color);
+}

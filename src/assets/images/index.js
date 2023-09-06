@@ -28,6 +28,9 @@ import developer from './developer.png'
 import piCountries from './PI_countries.png'
 import emprendar from './emprendar.png'
 
+// Images of About Component
+import education from './education.png'
+
 export {
   html,
   css,
@@ -50,5 +53,6 @@ export {
   linkedin,
   developer,
   piCountries,
-  emprendar
+  emprendar,
+  education
 }
