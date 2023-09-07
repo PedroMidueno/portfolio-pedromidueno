@@ -39,7 +39,6 @@
   --desktop-paragraph-font-weigth: 400;
   --desktop-navigation-font-weigth: 600;
   --desktop-captions-font-weigth: 400;
-
   --transition-settings: all .3s ease;
 
   /* Shadow colors*/
@@ -58,8 +57,6 @@
   --project-card-bg: linear-gradient(135deg, #45484d 0%,#000000 100%);
   --project-card-box-shadow: #4a006f;
   --project-card-bg-hover: #220135;
-
-
 }
 
 body {
@@ -106,6 +103,19 @@ body.light {
 
 #scroll-top-button:active {
   transform: scale(0.8);
+}
+
+.status-bar {
+  border: 1px solid red;
+  display: flex;
+}
+
+.available-button {
+  border: 1px solid green;
+}
+
+.cv-download-button {
+  border: 1px solid yellow;
 }
 
 @keyframes popup {

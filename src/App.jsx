@@ -11,6 +11,7 @@ const About = lazy(() => import('./components/About'))
 const Contact = lazy(() => import('./components/Contact'))
 const AnimatedRoute = lazy(() => import('./components/AnimatedRoute'))
 const ScrollTopButton = lazy(() => import('./components/ScrollTopButton'))
+const StatusBar = lazy(() => import('./components/StatusBar'))
 
 export default function App () {
   const { theme } = useUISettings()
@@ -38,6 +39,7 @@ export default function App () {
       {!routes.includes(location) && <Redirect to='/' />}
 
       <ScrollTopButton />
+      <StatusBar />
 
     </Suspense>
   )

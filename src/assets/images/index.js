@@ -38,6 +38,9 @@ import fullstack from './fullstack_certificate.png'
 import upskilling from './upskilling_certificate.jpg'
 import scrum from './scrum_certificate.jpg'
 
+// Images for statusBar
+import available from './available.png'
+
 export {
   html,
   css,
@@ -66,5 +69,6 @@ export {
   languages,
   fullstack,
   upskilling,
-  scrum
+  scrum,
+  available
 }
