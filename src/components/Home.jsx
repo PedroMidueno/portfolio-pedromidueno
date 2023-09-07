@@ -11,7 +11,7 @@ const Home = () => {
 
   return (
     <main>
-      <section>
+      <section className={styles.main}>
 
         <div className={styles.presentation}>
           <h2 className={theme === LIGHT && styles.light}>
@@ -57,9 +57,9 @@ const Home = () => {
       </section>
 
       <hr className={theme === LIGHT && styles.light} />
-      <div>
-        <Tech />
-      </div>
+
+      <Tech />
+
       <hr className={theme === LIGHT && styles.light} />
       <Projects />
     </main>

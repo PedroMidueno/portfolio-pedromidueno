@@ -8,7 +8,7 @@ const Projects = () => {
   const { lang, theme } = useUISettings()
 
   return (
-    <>
+    <section className={styles.container}>
       <h3 className={`${styles.title} ${theme === LIGHT && styles.light}`}>
         {lang === ES ? 'Proyectos' : 'Projects'}
       </h3>
@@ -29,7 +29,7 @@ const Projects = () => {
           })
         }
       </section>
-    </>
+    </section>
   )
 }
 

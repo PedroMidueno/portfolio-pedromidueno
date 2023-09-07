@@ -30,6 +30,7 @@ import emprendar from './emprendar.png'
 
 // Images of About Component
 import education from './education.png'
+import me from './me.png'
 
 // Certificates
 import fullstack from './fullstack_certificate.png'
@@ -60,6 +61,7 @@ export {
   piCountries,
   emprendar,
   education,
+  me,
   fullstack,
   upskilling,
   scrum
