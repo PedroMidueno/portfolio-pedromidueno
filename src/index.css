@@ -54,7 +54,7 @@
   --git-shadow-color: #f77f00;
 
   /*Project cards colors*/
-  --project-card-bg: linear-gradient(135deg, #45484d 0%,#000000 100%);
+  --project-card-bg: linear-gradient(135deg, #45484d 0%, #000000 100%);
   --project-card-box-shadow: #4a006f;
   --project-card-bg-hover: #220135;
 }
@@ -76,6 +76,7 @@ body.light {
   max-width: 83%;
   margin: 0 auto;
   min-height: 100vh;
+  padding-bottom: 25px;
 }
 
 #scroll-top-button {
@@ -106,16 +107,67 @@ body.light {
 }
 
 .status-bar {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
+  gap: 10px;
+  position: fixed;
+  bottom: 15px;
+  top: unset;
+  left: 20px;
+  right: unset;
 }
 
 .available-button {
-  border: 1px solid green;
+  border: 1px solid var(--light-color);
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  color: var(--light-color);
+  font-family: 'Nunito';
+  border-radius: 42px;
+  padding: 5px;
+  height: 42px;
+  text-decoration: none;
+  background: #006400;
+  transition: var(--transition-settings);
+}
+
+.available-button.light {
+  border: 1px solid var(--dark-color);
+}
+
+.available-button>img {
+  width: 30px;
 }
 
 .cv-download-button {
-  border: 1px solid yellow;
+  border: 1px solid var(--light-color);
+  border-radius: 40px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 0 12px;
+  width: 42px;
+  height: 42px;
+  transition: var(--transition-settings);
+  font-family: 'Nunito';
+  white-space: nowrap;
+  overflow: hidden;
+  color: var(--light-color);
+  background: #023e8a;
+  text-decoration: none;
+}
+
+.cv-download-button.light {
+  border: 1px solid var(--dark-color);
+}
+
+.cv-download-button:hover {
+  width: 150px;
+}
+
+.download-logo {
+  font-size: 22px;
 }
 
 @keyframes popup {
