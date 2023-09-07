@@ -31,6 +31,7 @@ import emprendar from './emprendar.png'
 // Images of About Component
 import education from './education.png'
 import me from './me.png'
+import languages from './languages.png'
 
 // Certificates
 import fullstack from './fullstack_certificate.png'
@@ -62,6 +63,7 @@ export {
   emprendar,
   education,
   me,
+  languages,
   fullstack,
   upskilling,
   scrum

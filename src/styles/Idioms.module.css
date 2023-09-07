@@ -1,0 +1,84 @@
+.container {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 40px;
+  margin: 40px auto;
+  width: 100%;
+}
+
+.title {
+  /* border: 1px solid red; */
+  font-size: 40px;
+  font-family: 'Roboto-Regular';
+  text-align: center;
+  color: var(--title-color-dark-mode);
+  transition: var(--transition-settings);
+}
+
+.title.light {
+  color: var(--dark-color);
+}
+
+.lang_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.idioms_img {
+  width: 200px;
+}
+
+.card {
+  border: 3px solid var(--light-color);
+  border-radius: 10px;
+  width: 350px;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: var(--project-card-bg);
+  transition: var(--transition-settings);
+}
+
+.card.light {
+  border: 3px solid var(--dark-color);
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.lang_img{
+  width: 150px;
+  /* border: 1px solid violet; */
+}
+
+.text {
+  /* border: 1px solid yellow; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+}
+
+.lang {
+  font-size: 1.5rem;
+  font-family: 'Roboto-Medium';
+  color: var(--light-color);
+}
+
+.lang_level {
+  font-size: 1rem;
+  font-family: 'Nunito';
+  color: var(--title-color-dark-mode);
+}
+
+.link {
+  color: #48cae4;
+}
+
