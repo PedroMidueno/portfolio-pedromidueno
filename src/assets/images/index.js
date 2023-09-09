@@ -39,6 +39,7 @@ import available from './available.png'
 
 // Images for Contact Component
 import whatsapp from './whatsapp.png'
+import message from './contact.png'
 
 export {
   html,
@@ -68,5 +69,6 @@ export {
   upskilling,
   scrum,
   available,
-  whatsapp
+  whatsapp,
+  message
 }

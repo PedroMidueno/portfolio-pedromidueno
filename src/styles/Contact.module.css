@@ -22,6 +22,18 @@
   color: var(--dark-color);
 }
 
+.form_container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.form_container>img {
+  width: 300px;
+}
+
 form {
   border: 2px solid var(--light-color);
   border-radius: 10px;
@@ -157,9 +169,9 @@ form.light {
 
 .separador {
   /* border: 1px solid green; */
-  width: 70%;
+  width: 80%;
   position: relative;
-  margin: 20px auto;
+  margin: 40px auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
