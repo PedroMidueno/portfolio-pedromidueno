@@ -11,10 +11,6 @@ import sequelize from './sequelize.png'
 import git from './git.png'
 import next from './next.png'
 
-// Logos
-import logoDark from './logo_dark.png'
-import logoLight from './logo_light.png'
-
 // Images for main
 import music from './amor.png'
 import basketball from './pelota.png'
@@ -56,8 +52,6 @@ export {
   sequelize,
   git,
   next,
-  logoDark,
-  logoLight,
   music,
   basketball,
   dev,

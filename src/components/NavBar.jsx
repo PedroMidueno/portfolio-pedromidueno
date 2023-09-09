@@ -6,7 +6,7 @@ import { navBar } from '../config/languages'
 import styles from '../styles/NavBar.module.css'
 import ThemeSwitch from './ThemeSwitch'
 import LanguageSwitch from './LanguageSwitch'
-import { logoDark, logoLight } from '../assets/images/'
+import { logoDark, logoLight } from '../assets/svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 
