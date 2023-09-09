@@ -41,6 +41,9 @@ import scrum from './scrum_certificate.jpg'
 // Images for statusBar
 import available from './available.png'
 
+// Images for Contact Component
+import whatsapp from './whatsapp.png'
+
 export {
   html,
   css,
@@ -70,5 +73,6 @@ export {
   fullstack,
   upskilling,
   scrum,
-  available
+  available,
+  whatsapp
 }

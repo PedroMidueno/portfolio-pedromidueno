@@ -51,3 +51,4 @@ export const routes = ['/', '/about', '/contact', '/thanks']
 // Social Links
 export const githubLink = 'https://github.com/PedroMidueno'
 export const linkedinLink = 'https://www.linkedin.com/in/pedromidueno/'
+export const whatsappLink = 'https://wa.me/527442818460'
