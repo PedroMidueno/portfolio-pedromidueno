@@ -5,7 +5,6 @@ import Loader from './components/Loader'
 import { Redirect, useLocation, Route } from 'wouter'
 import { routes } from './config/consts'
 import { handleScroll } from './utils/handleScroll'
-import Thanks from './components/Thanks'
 const Contact = lazy(() => import('./components/Contact'))
 const NavBar = lazy(() => import('./components/NavBar'))
 const Home = lazy(() => import('./components/Home'))
@@ -13,6 +12,7 @@ const About = lazy(() => import('./components/About'))
 const AnimatedRoute = lazy(() => import('./components/AnimatedRoute'))
 const ScrollTopButton = lazy(() => import('./components/ScrollTopButton'))
 const StatusBar = lazy(() => import('./components/StatusBar'))
+const Thanks = lazy(() => import('./components/Thanks'))
 
 export default function App () {
   const { theme } = useUISettings()
@@ -23,7 +23,7 @@ export default function App () {
 
   return (
     <Suspense fallback={<Loader />}>
-      <NavBar />
+      {!location.includes('/thanks') && <NavBar />}
 
       <AnimatedRoute path='/'>
         <Home />
@@ -43,8 +43,9 @@ export default function App () {
 
       {!routes.includes(location) && <Redirect to='/' />}
 
+      {!location.includes('/thanks') && <StatusBar />}
+
       <ScrollTopButton />
-      <StatusBar />
 
     </Suspense>
   )

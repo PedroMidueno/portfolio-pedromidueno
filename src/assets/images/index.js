@@ -40,6 +40,7 @@ import available from './available.png'
 // Images for Contact Component
 import whatsapp from './whatsapp.png'
 import message from './contact.png'
+import messageSent from './message_sent.png'
 
 export {
   html,
@@ -70,5 +71,6 @@ export {
   scrum,
   available,
   whatsapp,
-  message
+  message,
+  messageSent
 }

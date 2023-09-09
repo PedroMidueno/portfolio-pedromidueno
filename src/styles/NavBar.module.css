@@ -20,7 +20,7 @@ nav {
 
 .logo {
     /* border: 1px solid red; */
-    min-width: 100px;
+    min-width: 105px;
     height: 35px;
     max-height: 35px;
     display: flex;

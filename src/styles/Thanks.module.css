@@ -1,0 +1,27 @@
+.container {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-top: 40px;
+}
+
+.thanks {
+  font-family: 'Nunito';
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.redirect {
+  font-family: 'Nunito';
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.link {
+  font-family: 'Nunito';
+  color: #48cae4;
+  text-align: center;
+}
