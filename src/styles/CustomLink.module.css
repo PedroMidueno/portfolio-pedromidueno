@@ -22,7 +22,7 @@
     font-weight: bold;
 }
 
-.active:hover{
+.active:hover {
     transform: scale(1) translateY(-1px);
 }
 

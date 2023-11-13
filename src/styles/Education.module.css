@@ -22,7 +22,7 @@
 
 .education {
   /* border: 1px solid green; */
-  display: flex;  
+  display: flex;
   align-items: center;
   gap: 100px;
   padding: 0px 20px;
@@ -38,7 +38,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  
+
 }
 
 .education_box::before {
@@ -86,3 +86,7 @@
 .description.light {
   color: var(--dark-color);
 }
+
+/*
+TODO: Resposive design
+*/
