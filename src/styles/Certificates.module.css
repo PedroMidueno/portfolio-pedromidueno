@@ -34,10 +34,10 @@
   justify-content: space-around;
 }
 
-.certificate {  
+.certificate {
   display: inline-block;
   transition: var(--transition-settings);
-  width: 300px;  
+  width: 300px;
 }
 
 .certificate:hover {
@@ -45,7 +45,7 @@
 }
 
 .img {
-  width: 100%; 
+  width: 100%;
   border: 3px solid var(--light-color);
   border-radius: 5px;
   transition: var(--transition-settings);
@@ -54,3 +54,7 @@
 .img.light {
   border: 3px solid var(--dark-color);
 }
+
+/*
+TODO: Resposive design
+*/

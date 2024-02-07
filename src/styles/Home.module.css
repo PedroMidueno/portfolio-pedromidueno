@@ -103,3 +103,7 @@ main hr {
 main hr.light {
   border: 2px solid var(--dark-color);
 }
+
+/*
+TODO: Resposive design
+*/
