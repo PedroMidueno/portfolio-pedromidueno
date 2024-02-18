@@ -1,6 +1,6 @@
 import Education from './Education'
 import Certificates from './Certificates'
-import Idioms from './Idioms'
+import Languages from './Languages'
 import { useUISettings } from '../hooks/useUISettings'
 import { ES, EN, LIGHT } from '../config/consts'
 import { me } from '../assets/images'
@@ -37,7 +37,7 @@ const About = () => {
 
       <hr className={theme === LIGHT && styles.light} />
 
-      <Idioms />
+      <Languages />
 
     </section>
   )

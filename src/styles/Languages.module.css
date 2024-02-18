@@ -11,7 +11,7 @@
 .title {
   /* border: 1px solid red; */
   font-size: 40px;
-  font-family: 'Roboto-Regular';
+  font-family: "Roboto-Regular";
   text-align: center;
   color: var(--title-color-dark-mode);
   transition: var(--transition-settings);
@@ -27,7 +27,7 @@
   align-items: center;
 }
 
-.idioms_img {
+.langs_img {
   width: 200px;
 }
 
@@ -68,13 +68,13 @@
 
 .lang {
   font-size: 1.5rem;
-  font-family: 'Roboto-Medium';
+  font-family: "Roboto-Medium";
   color: var(--light-color);
 }
 
 .lang_level {
   font-size: 1rem;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   color: var(--title-color-dark-mode);
 }
 

@@ -1,10 +1,10 @@
-import styles from '../styles/Idioms.module.css'
+import styles from '../styles/Languages.module.css'
 import { ES, LIGHT } from '../config/consts'
 import { useUISettings } from '../hooks/useUISettings'
 import { languages } from '../assets/images'
 import { es, en } from '../assets/svg'
 
-const Idioms = () => {
+const Languages = () => {
   const { lang, theme } = useUISettings()
 
   return (
@@ -15,7 +15,7 @@ const Idioms = () => {
 
       <article className={styles.lang_container}>
 
-        <img src={languages} alt='Languages Image' className={styles.idioms_img} />
+        <img src={languages} alt='Languages Image' className={styles.langs_img} />
 
         <article className={`${styles.card} ${theme === LIGHT && styles.light}`}>
           <img src={es} alt='Spanish' className={styles.lang_img} />
@@ -51,4 +51,4 @@ const Idioms = () => {
   )
 }
 
-export default Idioms
+export default Languages
