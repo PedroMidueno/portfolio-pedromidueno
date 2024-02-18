@@ -13,7 +13,7 @@
 .title {
   /* border: 1px solid violet; */
   font-size: 40px;
-  font-family: 'Roboto-Regular';
+  font-family: "Roboto-Regular";
   text-align: center;
   color: var(--title-color-dark-mode);
   transition: var(--transition-settings);
@@ -32,6 +32,7 @@
   /* gap: 20px; */
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .certificate {
@@ -55,6 +56,30 @@
   border: 3px solid var(--dark-color);
 }
 
-/*
-TODO: Resposive design
-*/
+/* Responsive desing */
+
+@media screen and (max-width: 1200px) {
+  .certificates_container {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 843px) {
+  .certificates_container {
+    flex-direction: column;
+  }
+
+  .cert_card {
+    width: 80%;
+  }
+
+  .certificate {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cert_card {
+    width: 100%;
+  }
+}
