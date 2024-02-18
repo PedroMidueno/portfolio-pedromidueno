@@ -17,7 +17,7 @@
 }
 
 .description {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-size: 1.3rem;
   width: 60%;
 }
@@ -37,28 +37,55 @@
   width: 30%;
 }
 
-.about>hr {
+.about > hr {
   border: 2px solid var(--light-color);
   margin-top: 20px;
   margin-bottom: 20px;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   width: 100%;
 }
 
-.about>hr.light {
+.about > hr.light {
   border: 2px solid var(--dark-color);
 }
 
-/*
-TODO: Resposive design
-*/
+/* Responsive design */
 
 @media screen and (max-width: 1100px) {
   .description {
     font-size: 1rem;
   }
+}
+
+@media screen and (max-width: 900px) {
+  .img {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .description {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .me {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .description {
+    width: 100%;
+  }
 
   .img {
-    border: 1px solid red;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .img {
+    width: 100%;
   }
 }
