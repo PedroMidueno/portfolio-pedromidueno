@@ -17,33 +17,36 @@ const Languages = () => {
 
         <img src={languages} alt='Languages Image' className={styles.langs_img} />
 
-        <article className={`${styles.card} ${theme === LIGHT && styles.light}`}>
-          <img src={es} alt='Spanish' className={styles.lang_img} />
-          <div className={styles.text}>
-            <span className={styles.lang}>
-              {lang === ES ? 'Español' : 'Spanish'}
-            </span>
-            <span className={styles.lang_level}>
-              {lang === ES ? 'Nativo' : 'Native'}
-            </span>
-          </div>
-        </article>
+        <section className={styles.cards_container}>
 
-        <article className={`${styles.card} ${theme === LIGHT && styles.light}`}>
-          <img src={en} alt='English' className={styles.lang_img} />
-          <div className={styles.text}>
-            <span className={styles.lang}>
-              {lang === ES ? 'Inglés' : 'English'}
-            </span>
-            <span className={styles.lang_level}>
-              {lang === ES ? 'Certificado por ' : 'Certified by '}
-              <a href='https://www.efset.org/cert/NbA5Bk' target='_blank' rel='noreferrer' className={styles.link}>
-                EF SET
-              </a>
-            </span>
-          </div>
+          <article className={`${styles.card} ${theme === LIGHT && styles.light}`}>
+            <img src={es} alt='Spanish' className={styles.lang_img} />
+            <div className={styles.text}>
+              <span className={styles.lang}>
+                {lang === ES ? 'Español' : 'Spanish'}
+              </span>
+              <span className={styles.lang_level}>
+                {lang === ES ? 'Nativo' : 'Native'}
+              </span>
+            </div>
+          </article>
 
-        </article>
+          <article className={`${styles.card} ${theme === LIGHT && styles.light}`}>
+            <img src={en} alt='English' className={styles.lang_img} />
+            <div className={styles.text}>
+              <span className={styles.lang}>
+                {lang === ES ? 'Inglés (C1)' : 'English (C1)'}
+              </span>
+              <span className={styles.lang_level}>
+                {lang === ES ? 'Certificado por ' : 'Certified by '}
+                <a href='https://www.efset.org/cert/NbA5Bk' target='_blank' rel='noreferrer' className={styles.link}>
+                  EF SET
+                </a>
+              </span>
+            </div>
+          </article>
+
+        </section>
 
       </article>
 
