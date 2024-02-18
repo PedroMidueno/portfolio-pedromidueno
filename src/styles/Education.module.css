@@ -10,7 +10,7 @@
 .title {
   /* border: 1px solid red; */
   font-size: 40px;
-  font-family: 'Roboto-Regular';
+  font-family: "Roboto-Regular";
   text-align: center;
   color: var(--title-color-dark-mode);
   transition: var(--transition-settings);
@@ -28,7 +28,7 @@
   padding: 0px 20px;
 }
 
-.education>img {
+.education > img {
   /* border: 1px solid violet; */
   height: 300px;
 }
@@ -38,11 +38,10 @@
   position: relative;
   display: flex;
   flex-direction: column;
-
 }
 
 .education_box::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 2px;
   height: 120%;
@@ -52,7 +51,7 @@
 }
 
 .education_box::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 12px;
   height: 12px;
@@ -63,21 +62,21 @@
 }
 
 .degree {
-  font-family: 'Roboto-Regular';
+  font-family: "Roboto-Regular";
   font-size: 1.6rem;
   color: #e36414;
   font-weight: bold;
 }
 
 .school {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-style: italic;
   font-size: 1.2rem;
   color: gray;
 }
 
 .description {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   color: var(--light-color);
   font-size: 1rem;
   transition: var(--transition-settings);
@@ -87,6 +86,34 @@
   color: var(--dark-color);
 }
 
-/*
-TODO: Resposive design
-*/
+/* Responsive design */
+
+@media screen and (max-width: 800px) {
+  .education {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .education > img {
+    width: 50%;
+    height: auto;
+  }
+
+  .timeline {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .degree {
+    font-size: 1.2rem;
+  }
+
+  .school {
+    font-size: 1rem;
+  }
+
+  .description {
+    font-size: 0.8rem;
+  }
+}
