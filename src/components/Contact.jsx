@@ -5,13 +5,13 @@ import { useUISettings } from '../hooks/useUISettings'
 
 const Contact = () => {
   const { theme, lang } = useUISettings()
+  const locOrigin = window.location.origin
 
   return (
     <section className={styles.container}>
       {/*  eslint-disable-next-line */}
       <h3 className={`${styles.title} ${theme === LIGHT && styles.light}`}>
         {lang === ES ? 'Ponte en contacto conmigo 😃' : 'Get in touch with me 😃'}
-
       </h3>
 
       <div className={styles.form_container}>
@@ -45,7 +45,7 @@ const Contact = () => {
           <button type='submit' className={`${styles.submit_button} ${theme === LIGHT && styles.light}`}>
             {lang === ES ? 'Enviar' : 'Submit'}
           </button>
-          <input type='hidden' name='_next' value='http://localhost:3000/thanks' />
+          <input type='hidden' name='_next' value={`${locOrigin + '/thanks'}`} />
           <input type='hidden' name='_captcha' value='false' />
         </form>
       </div>
