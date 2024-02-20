@@ -8,24 +8,64 @@
 }
 
 .thanks {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-size: 1.8rem;
   font-weight: bold;
   text-align: center;
 }
 
 .redirect {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-size: 1.3rem;
   text-align: center;
 }
 
 .link {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   color: #48cae4;
   text-align: center;
 }
 
-/*
-TODO: Resposive design
-*/
+/* Resposive design */
+
+@media screen and (max-width: 700px) {
+  .container > img {
+    width: 50%;
+  }
+
+  .thanks {
+    font-size: 1.5rem;
+  }
+
+  .redirect {
+    font-size: 1rem;
+  }
+
+  .link {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .container > img {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container > img {
+    width: 90%;
+  }
+
+  .thanks {
+    font-size: 1.2rem;
+  }
+
+  .redirect {
+    font-size: 0.9rem;
+  }
+
+  .link {
+    font-size: 0.7rem;
+  }
+}
