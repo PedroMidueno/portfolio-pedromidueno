@@ -25,7 +25,7 @@ const Thanks = () => {
 
   return (
     <section className={styles.container}>
-      <img src={messageSent} alt='' />
+      <img src={messageSent} alt='message sent' />
       <span className={styles.thanks}>
         Mensaje enviado! / Message sent!
       </span>

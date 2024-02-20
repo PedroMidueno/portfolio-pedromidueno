@@ -23,7 +23,7 @@ const Education = () => {
 
       <div className={styles.education}>
 
-        <img src={education} alt='' />
+        <img src={education} alt='education' />
 
         <div className={styles.timeline}>
           <div className={styles.education_box}>

@@ -22,37 +22,37 @@ const Home = () => {
           <span className={theme === LIGHT && styles.light}>
             {lang === ES && main.dev.es}
             {lang === EN && main.dev.en}
-            <img src={dev} alt='' />
+            <img src={dev} alt='fullstack developer' />
           </span>
           <span className={theme === LIGHT && styles.light}>
             Geek
-            <img src={geek} alt='' />
+            <img src={geek} alt='geek' />
           </span>
           <span className={theme === LIGHT && styles.light}>
             {lang === ES && main.nba.es}
             {lang === EN && main.nba.en}
-            <img src={basketball} alt='' />
+            <img src={basketball} alt='basketball ball' />
           </span>
           <span className={theme === LIGHT && styles.light}>
             {lang === ES && main.music.es}
             {lang === EN && main.music.en}
-            <img src={music} alt='' />
+            <img src={music} alt='music love' />
           </span>
 
           <div className={styles.buttons}>
             <a href={linkedinLink} target='_blank' rel='noreferrer'>
-              <img src={linkedin} alt='' />
+              <img src={linkedin} alt='linkedin logo' />
               LinkedIn
             </a>
 
             <a href={githubLink} target='_blank' rel='noreferrer'>
-              <img src={github} alt='' />
+              <img src={github} alt='github logo' />
               GitHub
             </a>
           </div>
         </div>
 
-        <img src={developer} alt='' />
+        <img src={developer} alt='developer' />
 
       </section>
 

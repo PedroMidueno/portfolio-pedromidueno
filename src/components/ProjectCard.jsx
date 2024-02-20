@@ -23,7 +23,7 @@ const ProjectCard = ({ title, image, repo, deploy, tech, description }) => {
         <div className={styles.tech_container}>
           {tech.map(tech => {
             return (
-              <img src={tech} alt='' key={tech} className={styles.tech} />
+              <img src={tech} alt='tech' key={tech} className={styles.tech} />
             )
           })}
         </div>

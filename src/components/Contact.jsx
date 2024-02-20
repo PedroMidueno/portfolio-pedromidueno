@@ -14,7 +14,7 @@ const Contact = () => {
       </h3>
 
       <div className={styles.form_container}>
-        <img src={message} alt='' />
+        <img src={message} alt='contact' />
 
         <form action='https://formsubmit.co/65129fde3b1949ece8b83c82be690bdf' method='POST' className={`${theme === LIGHT && styles.light}`}>
           <div className={styles.name_div}>
@@ -63,11 +63,11 @@ const Contact = () => {
       </span>
       <div className={styles.links}>
         <a href={linkedinLink} target='_blank' rel='noreferrer' className={`${styles.link} ${theme === LIGHT && styles.light}`}>
-          <img src={linkedin} alt='' title='LinkedIn' />
+          <img src={linkedin} alt='linkedin logo' title='LinkedIn' />
         </a>
 
         <a href={whatsappLink} target='_blank' rel='noreferrer' className={`${styles.link} ${theme === LIGHT && styles.light}`}>
-          <img src={whatsapp} alt='' title='WhatsApp' />
+          <img src={whatsapp} alt='whatsapp logo' title='WhatsApp' />
         </a>
       </div>
     </section>
