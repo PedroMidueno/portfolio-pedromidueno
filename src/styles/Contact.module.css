@@ -11,7 +11,7 @@
 .title {
   /* border: 1px solid red; */
   font-size: 40px;
-  font-family: 'Roboto-Regular';
+  font-family: "Roboto-Regular";
   text-align: center;
   color: var(--title-color-dark-mode);
   transition: var(--transition-settings);
@@ -30,7 +30,7 @@
   gap: 100px;
 }
 
-.form_container>img {
+.form_container > img {
   width: 300px;
 }
 
@@ -64,9 +64,9 @@ form.light {
 .subject_input,
 .message_input {
   width: 100%;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-size: 1.2rem;
-  padding: .6em .3em;
+  padding: 0.6em 0.3em;
   border: none;
   outline: none;
   color: var(--light-color);
@@ -100,7 +100,7 @@ form.light {
   left: 5px;
   transform: translateY(12px);
   transition: var(--transition-settings);
-  font-family: 'Nunito';
+  font-family: "Nunito";
 }
 
 .name_label.light,
@@ -110,29 +110,29 @@ form.light {
   color: gray;
 }
 
-.name_input:focus+.name_label,
-.email_input:focus+.email_label,
-.subject_input:focus+.subject_label,
-.message_input:focus+.message_label,
-.name_input:not(:placeholder-shown)+.name_label,
-.email_input:not(:placeholder-shown)+.email_label,
-.subject_input:not(:placeholder-shown)+.subject_label,
-.message_input:not(:placeholder-shown)+.message_label {
-  transform: translateY(-12px) scale(.8);
+.name_input:focus + .name_label,
+.email_input:focus + .email_label,
+.subject_input:focus + .subject_label,
+.message_input:focus + .message_label,
+.name_input:not(:placeholder-shown) + .name_label,
+.email_input:not(:placeholder-shown) + .email_label,
+.subject_input:not(:placeholder-shown) + .subject_label,
+.message_input:not(:placeholder-shown) + .message_label {
+  transform: translateY(-12px) scale(0.8);
   transform-origin: top left;
   color: var(--light-color);
   font-weight: bold;
 }
 
-.name_input:focus+.name_label.light,
-.email_input:focus+.email_label.light,
-.subject_input:focus+.subject_label.light,
-.message_input:focus+.message_label.light,
-.name_input:not(:placeholder-shown)+.name_label.light,
-.email_input:not(:placeholder-shown)+.email_label.light,
-.subject_input:not(:placeholder-shown)+.subject_label.light,
-.message_input:not(:placeholder-shown)+.message_label.light {
-  transform: translateY(-12px) scale(.8);
+.name_input:focus + .name_label.light,
+.email_input:focus + .email_label.light,
+.subject_input:focus + .subject_label.light,
+.message_input:focus + .message_label.light,
+.name_input:not(:placeholder-shown) + .name_label.light,
+.email_input:not(:placeholder-shown) + .email_label.light,
+.subject_input:not(:placeholder-shown) + .subject_label.light,
+.message_input:not(:placeholder-shown) + .message_label.light {
+  transform: translateY(-12px) scale(0.8);
   transform-origin: top left;
   color: var(--dark-color);
   font-weight: bold;
@@ -145,7 +145,7 @@ form.light {
   color: var(--light-color);
   border: 2px solid var(--light-color);
   border-radius: 10px;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-size: 1.2rem;
   font-weight: bold;
   cursor: pointer;
@@ -178,36 +178,37 @@ form.light {
   align-items: center;
 }
 
-.separador>hr {
+.separador > hr {
   background-color: var(--light-color);
   width: 100%;
   height: 1px;
   transition: var(--transition-settings);
 }
 
-.separador.light>hr {
+.separador.light > hr {
   background-color: var(--dark-color);
 }
 
-.separador>span {
+.separador > span {
   /* border: 1px solid red; */
   position: absolute;
   background: var(--dark-color);
-  font-family: 'Roboto-Regular';
+  font-family: "Roboto-Regular";
   font-size: 1rem;
   padding: 0 2px;
   transition: var(--transition-settings);
 }
 
-.separador.light>span {
+.separador.light > span {
   background-color: var(--light-color);
 }
 
 .social {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-size: 1.1rem;
   transition: var(--transition-settings);
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .links {
@@ -245,7 +246,7 @@ form.light {
   background: var(--dark-color);
 }
 
-.link>img {
+.link > img {
   width: 60%;
 }
 
@@ -263,6 +264,53 @@ form.light {
   }
 }
 
-/*
-TODO: Resposive design
-*/
+/* Resposive design */
+
+@media screen and (max-width: 970px) {
+  .name_div,
+  .email_div,
+  .subject_div,
+  .message_div {
+    /* border: 1px solid crimson; */
+    position: relative;
+    width: 90%;
+  }
+
+  .form_container > img {
+    width: 30%;
+  }
+
+  form {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .form_container > img {
+    display: none;
+  }
+
+  form {
+    width: 80%;
+  }
+
+  .links {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  form {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  form {
+    width: 100%;
+  }
+
+  .links {
+    width: 100%;
+  }
+}
