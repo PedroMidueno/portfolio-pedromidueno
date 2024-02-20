@@ -1,16 +1,16 @@
 @font-face {
-  font-family: 'Nunito';
-  src: url('assets/fonts/Nunito-VariableFont.ttf') format('truetype')
+  font-family: "Nunito";
+  src: url("assets/fonts/Nunito-VariableFont.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Roboto-Regular';
-  src: url('assets/fonts/Roboto-Regular.ttf') format('truetype');
+  font-family: "Roboto-Regular";
+  src: url("assets/fonts/Roboto-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Roboto-Medium';
-  src: url('assets/fonts/Roboto-Medium.ttf') format('truetype');
+  font-family: "Roboto-Medium";
+  src: url("assets/fonts/Roboto-Medium.ttf") format("truetype");
 }
 
 * {
@@ -23,7 +23,7 @@
 :root {
   /* UISettings variables*/
   --light-color: #eeeeee;
-  --dark-color: #11151C;
+  --dark-color: #11151c;
   --title-color-dark-mode: #ced4da;
 
   /*Desktop font size variables*/
@@ -39,7 +39,7 @@
   --desktop-paragraph-font-weigth: 400;
   --desktop-navigation-font-weigth: 600;
   --desktop-captions-font-weigth: 400;
-  --transition-settings: all .3s ease;
+  --transition-settings: all 0.3s ease;
 
   /* Shadow colors*/
   --html-shadow-color: #fb8500;
@@ -62,7 +62,7 @@
 body {
   background: var(--dark-color);
   color: var(--light-color);
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   overflow-x: hidden;
 }
 
@@ -98,7 +98,7 @@ body.light {
 }
 
 #scroll-top-button.show {
-  animation: popup .2s ease-in-out;
+  animation: popup 0.2s ease-in-out;
   transform: scale(1);
 }
 
@@ -123,7 +123,7 @@ body.light {
   gap: 5px;
   align-items: center;
   color: var(--light-color);
-  font-family: 'Nunito';
+  font-family: "Nunito";
   border-radius: 42px;
   padding: 5px;
   height: 42px;
@@ -136,7 +136,7 @@ body.light {
   border: 1px solid var(--dark-color);
 }
 
-.available-button>img {
+.available-button > img {
   width: 30px;
 }
 
@@ -150,7 +150,7 @@ body.light {
   width: 42px;
   height: 42px;
   transition: var(--transition-settings);
-  font-family: 'Nunito';
+  font-family: "Nunito";
   white-space: nowrap;
   overflow: hidden;
   color: var(--light-color);
@@ -184,9 +184,49 @@ body.light {
   }
 }
 
+/* Responsive design */
+
+@media screen and (max-width: 800px) {
+  .status-bar {
+    justify-content: flex-start;
+    gap: 5px;
+  }
+
+  .cv-download-button {
+    font-size: 0.8rem;
+    width: 130px;
+    height: 40px;
+  }
+
+  .available-button {
+    font-size: 0.8rem;
+    height: 40px;
+  }
+}
+
 @media screen and (max-width: 829px) {
   #app {
     max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .status-bar {
+    flex-direction: column;
+    gap: 3px;
+    bottom: 5px;
+  }
+
+  .available-button {
+    font-size: 0.7rem;
+    height: 38px;
+    order: 2;
+  }
+
+  .cv-download-button {
+    font-size: 0.7rem;
+    height: 38px;
+    order: 1;
   }
 }
 
