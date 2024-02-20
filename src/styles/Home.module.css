@@ -14,7 +14,7 @@
 }
 
 .presentation h2 {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-size: var(--desktop-subtitle-font-size);
   color: var(--title-color-dark-mode);
   transition: var(--transition-settings);
@@ -25,7 +25,7 @@
 }
 
 .presentation h1 {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-style: italic;
   font-size: 70px;
   color: #f15025;
@@ -35,7 +35,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-size: 24px;
   font-weight: bold;
   color: var(--title-color-dark-mode);
@@ -50,7 +50,7 @@
   width: 30px;
 }
 
-section>img {
+.main > img {
   width: 350px;
   /* border: 1px solid green; */
 }
@@ -75,7 +75,7 @@ section>img {
   width: 120px;
   border: 1px solid var(--dark-color);
   padding-left: 15px;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-weight: bold;
   font-size: 14px;
   background: #fff;
@@ -97,13 +97,89 @@ main hr {
   border: 2px solid var(--light-color);
   margin-top: 20px;
   margin-bottom: 20px;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 main hr.light {
   border: 2px solid var(--dark-color);
 }
 
-/*
-TODO: Resposive design
-*/
+/* Resposive design*/
+
+@media screen and (max-width: 1100px) {
+  .presentation h2 {
+    font-size: var(--mobile-subtitle-font-size);
+  }
+
+  .presentation h1 {
+    font-size: 65px;
+  }
+
+  .presentation span {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .buttons a:hover {
+    transform: scale(1);
+    box-shadow: none;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .presentation h2 {
+    font-size: 26px;
+  }
+
+  .presentation h1 {
+    font-size: 50px;
+  }
+
+  .presentation span {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .main > img {
+    width: 40%;
+  }
+
+  .main {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .presentation h1 {
+    text-align: center;
+  }
+
+  .presentation {
+    width: 100%;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .presentation h2 {
+    font-size: 24px;
+  }
+
+  .presentation h1 {
+    font-size: 45px;
+  }
+
+  .presentation span {
+    font-size: 12px;
+  }
+
+  .buttons a {
+    transform: scale(0.8);
+  }
+
+  .buttons a:hover {
+    transform: scale(0.8);
+    box-shadow: none;
+  }
+}
