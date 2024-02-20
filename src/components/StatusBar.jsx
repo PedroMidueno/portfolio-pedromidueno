@@ -11,10 +11,10 @@ const StatusBar = () => {
   return (
     <article className='status-bar'>
       <Link href='/contact'>
-        <a className={`${'available-button'} ${theme === LIGHT && 'light'}`}>
+        <div className={`${'available-button'} ${theme === LIGHT && 'light'}`}>
           <img src={available} alt='Available image' />
           {lang === ES ? 'Disponible para trabajar' : 'Open to work'}
-        </a>
+        </div>
       </Link>
 
       <a
