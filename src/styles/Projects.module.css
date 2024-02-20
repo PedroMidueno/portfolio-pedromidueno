@@ -14,7 +14,7 @@
 .title {
   /* border: 1px solid red; */
   font-size: 40px;
-  font-family: 'Roboto-Regular';
+  font-family: "Roboto-Regular";
   text-align: center;
   margin-bottom: 30px;
   color: var(--title-color-dark-mode);
@@ -24,7 +24,3 @@
 .title.light {
   color: var(--dark-color);
 }
-
-/*
-TODO: Resposive design
-*/
