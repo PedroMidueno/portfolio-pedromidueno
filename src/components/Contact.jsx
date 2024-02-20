@@ -9,7 +9,6 @@ const Contact = () => {
 
   return (
     <section className={styles.container}>
-      {/*  eslint-disable-next-line */}
       <h3 className={`${styles.title} ${theme === LIGHT && styles.light}`}>
         {lang === ES ? 'Ponte en contacto conmigo 😃' : 'Get in touch with me 😃'}
       </h3>
