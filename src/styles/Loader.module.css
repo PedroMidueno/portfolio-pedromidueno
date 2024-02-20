@@ -1,13 +1,22 @@
 .loader {
-    /* border: 1px solid red; */
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+  /* border: 1px solid red; */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
-/*
-TODO: Resposive design
-*/
+/* Resposive design */
+
+@media screen and (max-width: 500px) {
+  .loader {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .loader > svg {
+    width: 100%;
+  }
+}
