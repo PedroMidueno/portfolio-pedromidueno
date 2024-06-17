@@ -2,6 +2,7 @@ import { react, css, redux, express, postgre, sequelize, next, piCountries, empr
 
 export const projects = [
   {
+    active: true,
     title: 'PI Countries',
     image: piCountries,
     repo: 'https://github.com/PedroMidueno/PI-Countries',
@@ -13,6 +14,7 @@ export const projects = [
     }
   },
   {
+    active: false,
     title: 'Emprendar',
     image: emprendar,
     repo: 'https://github.com/PedroMidueno/Emprendar_Front',

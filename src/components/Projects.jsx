@@ -15,17 +15,20 @@ const Projects = () => {
       <section className={styles.projects_container}>
         {
           projects.map(project => {
-            return (
-              <ProjectCard
-                key={project.title}
-                title={project.title}
-                image={project.image}
-                repo={project.repo}
-                deploy={project.deploy}
-                tech={project.tech}
-                description={project.description}
-              />
-            )
+            if (project.active) {
+              return (
+                <ProjectCard
+                  key={project.title}
+                  title={project.title}
+                  image={project.image}
+                  repo={project.repo}
+                  deploy={project.deploy}
+                  tech={project.tech}
+                  description={project.description}
+                />
+              )
+            }
+            return null
           })
         }
       </section>
