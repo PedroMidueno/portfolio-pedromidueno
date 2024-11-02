@@ -9,7 +9,7 @@ const ProjectCard = ({ title, image, repo, deploy, tech, description }) => {
   const { theme, lang } = useUISettings()
 
   return (
-    <article className={`${styles.project_card} ${theme === LIGHT && styles.light}`}>
+    <article className={`${styles.project_card} ${theme === LIGHT ? styles.light : undefined}`}>
 
       <div className={styles.image_container}>
         <img src={image} alt={`Image of ${title} project`} />

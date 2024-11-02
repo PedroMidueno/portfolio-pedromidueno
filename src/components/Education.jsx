@@ -17,7 +17,7 @@ const Education = () => {
 
   return (
     <article className={styles.container}>
-      <h3 className={`${styles.title} ${theme === LIGHT && styles.light}`}>
+      <h3 className={`${styles.title} ${theme === LIGHT ? styles.light : undefined}`}>
         {lang === ES ? 'Educación' : 'Education'}
       </h3>
 
@@ -35,7 +35,7 @@ const Education = () => {
               {lang === ES && fullstackSchool.es}
               {lang === EN && fullstackSchool.en}
             </span>
-            <p className={`${styles.description} ${theme === LIGHT && styles.light}`}>
+            <p className={`${styles.description} ${theme === LIGHT ? styles.light : undefined}`}>
               {lang === ES && fullstackDescription.es}
               {lang === EN && fullstackDescription.en}
             </p>
@@ -50,7 +50,7 @@ const Education = () => {
               {lang === ES && engineerSchool.es}
               {lang === EN && engineerSchool.en}
             </span>
-            <p className={`${styles.description} ${theme === LIGHT && styles.light}`}>
+            <p className={`${styles.description} ${theme === LIGHT ? styles.light : undefined}`}>
               {lang === ES && engineerDescription.es}
               {lang === EN && engineerDescription.en}
             </p>

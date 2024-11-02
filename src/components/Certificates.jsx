@@ -8,7 +8,7 @@ const Certificates = () => {
 
   return (
     <section className={styles.container}>
-      <h3 className={`${styles.title} ${theme === LIGHT && styles.light}`}>
+      <h3 className={`${styles.title} ${theme === LIGHT ? styles.light : undefined}`}>
         {lang === ES ? 'Certificados' : 'Certificates'}
       </h3>
       <div className={styles.certificates_container}>
@@ -23,7 +23,7 @@ const Certificates = () => {
                   src={cert.image}
                   alt='Certificado'
                   title={lang === ES ? 'Ver Certificado' : 'View Certificate'}
-                  className={`${styles.img} ${theme === LIGHT && styles.light}`}
+                  className={`${styles.img} ${theme === LIGHT ? styles.light : undefined}`}
                 />
               </a>
             </article>

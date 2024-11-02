@@ -9,7 +9,7 @@ const Languages = () => {
 
   return (
     <section className={styles.container}>
-      <h3 className={`${styles.title} ${theme === LIGHT && styles.light}`}>
+      <h3 className={`${styles.title} ${theme === LIGHT ? styles.light : undefined}`}>
         {lang === ES ? 'Idiomas' : 'Languages'}
       </h3>
 
@@ -19,7 +19,7 @@ const Languages = () => {
 
         <section className={styles.cards_container}>
 
-          <article className={`${styles.card} ${theme === LIGHT && styles.light}`}>
+          <article className={`${styles.card} ${theme === LIGHT ? styles.light : undefined}`}>
             <img src={es} alt='Spanish' className={styles.lang_img} />
             <div className={styles.text}>
               <span className={styles.lang}>
@@ -31,7 +31,7 @@ const Languages = () => {
             </div>
           </article>
 
-          <article className={`${styles.card} ${theme === LIGHT && styles.light}`}>
+          <article className={`${styles.card} ${theme === LIGHT ? styles.light : undefined}`}>
             <img src={en} alt='English' className={styles.lang_img} />
             <div className={styles.text}>
               <span className={styles.lang}>

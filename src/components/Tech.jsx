@@ -9,7 +9,7 @@ const Tech = () => {
 
   return (
     <section className={styles.tech}>
-      <h2 className={`${styles.title} ${theme === LIGHT && styles.light}`}>
+      <h2 className={`${styles.title} ${theme === LIGHT ? styles.light : undefined}`}>
         {lang === ES && tech.es}
         {lang === EN && tech.en}
       </h2>

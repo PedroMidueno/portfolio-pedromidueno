@@ -28,14 +28,14 @@ const NavBar = () => {
 
   return (
     <header>
-      <nav className={`${theme === LIGHT && styles.light}`}>
+      <nav className={`${theme === LIGHT ? styles.light : undefined}`}>
         <div className={styles.logo}>
           {theme === LIGHT && <img src={logoLight} alt='PedroMidueno.dev logo' />}
           {theme === DARK && <img src={logoDark} alt='PedroMidueno.dev logo' />}
 
         </div>
         <div
-          className={`${styles.links} ${theme === LIGHT && styles.light}`}
+          className={`${styles.links} ${theme === LIGHT ? styles.light : undefined}`}
           id='links'
           onClick={hideMenu}
         >
@@ -61,7 +61,7 @@ const NavBar = () => {
 
           <button
             onClick={showMenu}
-            className={`${styles.menu_button} ${theme === LIGHT && styles.light}`}
+            className={`${styles.menu_button} ${theme === LIGHT ? styles.light : undefined}`}
           >
             {open && <FontAwesomeIcon icon={faXmark} />}
             {!open && <FontAwesomeIcon icon={faBars} />}

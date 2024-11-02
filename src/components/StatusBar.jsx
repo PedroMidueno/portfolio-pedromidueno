@@ -11,7 +11,7 @@ const StatusBar = () => {
   return (
     <article className='status-bar'>
       <Link href='/contact'>
-        <div className={`${'available-button'} ${theme === LIGHT && 'light'}`}>
+        <div className={`${'available-button'} ${theme === LIGHT ? LIGHT : undefined}`}>
           <img src={available} alt='Available image' />
           {lang === ES ? 'Disponible para trabajar' : 'Open to work'}
         </div>
@@ -20,7 +20,7 @@ const StatusBar = () => {
       <a
         href='https://drive.google.com/drive/folders/1eclJdVAkwNHy7RHHaVkvZjZHv0mDwhcr?usp=sharing'
         target='_blank' rel='noreferrer'
-        className={`${'cv-download-button'} ${theme === LIGHT && 'light'}`}
+        className={`${'cv-download-button'} ${theme === LIGHT ? LIGHT : undefined}`}
       >
         <span className='download-logo'>
           <FontAwesomeIcon icon={faFileArrowDown} />
