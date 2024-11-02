@@ -7,9 +7,9 @@ import { education as educationLang } from '../config/languages'
 const Education = () => {
   const { lang, theme } = useUISettings()
   const {
-    fullstack,
-    fullstackDescription,
-    fullstackSchool,
+    // fullstack,
+    // fullstackDescription,
+    // fullstackSchool,
     engineer,
     engineerSchool,
     engineerDescription
@@ -26,7 +26,7 @@ const Education = () => {
         <img src={education} alt='education' />
 
         <div className={styles.timeline}>
-          <div className={styles.education_box}>
+          {/* <div className={styles.education_box}>
             <span className={styles.degree}>
               {lang === ES && fullstack.es}
               {lang === EN && fullstack.en}
@@ -39,7 +39,7 @@ const Education = () => {
               {lang === ES && fullstackDescription.es}
               {lang === EN && fullstackDescription.en}
             </p>
-          </div>
+          </div> */}
 
           <div className={styles.education_box}>
             <span className={styles.degree}>
