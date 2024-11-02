@@ -1,4 +1,4 @@
-import { html, css, js, react, redux, node, express, postgre, sequelize, git } from '../assets/images'
+import { node, postgre, git, ts, vue, pinia, nest, prismaLight, prismaDark, tailwind, nuxt } from '../assets/images'
 import styles from '../styles/Tech.module.css'
 import { useUISettings } from '../hooks/useUISettings'
 import { ES, EN, LIGHT } from '../config/consts'
@@ -15,18 +15,18 @@ const Tech = () => {
       </h3>
 
       <div className={styles.tech_wrapper}>
-        <img src={html} alt='HTML logo' title='HTML' />
-        <img src={css} alt='CSS logo' title='CSS' />
-        <img src={js} alt='JavaScript logo' title='JavaScript' />
-        <img src={react} alt='React logo' title='React' />
-        <img src={redux} alt='Redux logo' title='Redux' />
+        <img src={tailwind} alt='Tailwind CSS logo' title='Tailwind CSS' />
+        <img src={ts} alt='TypeScript logo' title='TypeScript' />
+        <img src={vue} alt='Vue logo' title='Vue' />
+        <img src={nuxt} alt='Nuxt logo' title='Nuxt' />
+        <img src={pinia} alt='Pinia logo' title='Pinia' />
       </div>
 
       <div className={styles.tech_wrapper}>
         <img src={node} alt='Node logo' title='Node' />
-        <img src={express} alt='Express logo' title='Express' />
+        <img src={nest} alt='Nest logo' title='Nest' />
         <img src={postgre} alt='Postgre logo' title='PostgreSQL' />
-        <img src={sequelize} alt='Sequelize logo' title='Sequelize' />
+        <img src={theme === LIGHT ? prismaLight : prismaDark} alt='Prisma logo' title='Prisma ORM' />
         <img src={git} alt='Git logo' title='Git' />
       </div>
     </section>
