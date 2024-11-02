@@ -10,6 +10,14 @@ import postgre from './postgre.png'
 import sequelize from './sequelize.png'
 import git from './git.png'
 import next from './next.png'
+import vue from './vue.svg'
+import nuxt from './nuxt.svg'
+import ts from './typescript.svg'
+import nest from './nestjs.svg'
+import prismaDark from './prisma-dark.svg'
+import prismaLight from './prisma-light.svg'
+import pinia from './pinia.svg'
+import tailwind from './tailwindcss.svg'
 
 // Images for main
 import music from './amor.png'
@@ -23,6 +31,7 @@ import developer from './developer.png'
 // Images for projects
 import piCountries from './PI_countries.png'
 import emprendar from './emprendar.png'
+import pemidLink from './pemid-link.png'
 
 // Images of About Component
 import education from './education.png'
@@ -54,6 +63,14 @@ export {
   sequelize,
   git,
   next,
+  vue,
+  nuxt,
+  ts,
+  nest,
+  prismaDark,
+  prismaLight,
+  pinia,
+  tailwind,
   music,
   basketball,
   dev,
@@ -63,6 +80,7 @@ export {
   developer,
   piCountries,
   emprendar,
+  pemidLink,
   education,
   me,
   languages,

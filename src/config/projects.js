@@ -1,8 +1,25 @@
-import { react, css, redux, express, postgre, sequelize, next, piCountries, emprendar } from '../assets/images'
+import {
+  react,
+  css,
+  redux,
+  express,
+  postgre,
+  sequelize,
+  next,
+  piCountries,
+  emprendar,
+  pemidLink,
+  nuxt,
+  ts,
+  nest,
+  prismaDark,
+  pinia,
+  tailwind
+} from '../assets/images'
 
 export const projects = [
   {
-    active: true,
+    active: false,
     title: 'PI Countries',
     image: piCountries,
     repo: 'https://github.com/PedroMidueno/PI-Countries',
@@ -24,6 +41,18 @@ export const projects = [
     description: {
       es: 'Una plataforma de crowdfunding que se enfoca en apoyar y financiar emprendimientos innovadores y prometedores.',
       en: 'A crowdfunding platform that focuses on supporting and financing innovative and promising ventures.'
+    }
+  },
+  {
+    active: true,
+    title: 'pemid.link',
+    image: pemidLink,
+    repo: 'https://github.com/PedroMidueno/pemid.link_front',
+    deploy: 'https://pemid.link',
+    tech: [nuxt, tailwind, pinia, ts, nest, prismaDark, postgre],
+    description: {
+      es: 'Un acortador de urls simple',
+      en: 'A simple url shortener'
     }
   }
 ]

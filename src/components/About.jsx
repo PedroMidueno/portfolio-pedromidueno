@@ -27,15 +27,15 @@ const About = () => {
         <img src={me} alt='About Image' className={styles.img} />
       </article>
 
-      <hr className={theme === LIGHT && styles.light} />
+      <hr className={theme === LIGHT ? styles.light : undefined} />
 
       <Education />
 
-      <hr className={theme === LIGHT && styles.light} />
+      <hr className={theme === LIGHT ? styles.light : undefined} />
 
       <Certificates />
 
-      <hr className={theme === LIGHT && styles.light} />
+      <hr className={theme === LIGHT ? styles.light : undefined} />
 
       <Languages />
 

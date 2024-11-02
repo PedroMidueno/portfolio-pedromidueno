@@ -7,9 +7,9 @@ import { education as educationLang } from '../config/languages'
 const Education = () => {
   const { lang, theme } = useUISettings()
   const {
-    fullstack,
-    fullstackDescription,
-    fullstackSchool,
+    // fullstack,
+    // fullstackDescription,
+    // fullstackSchool,
     engineer,
     engineerSchool,
     engineerDescription
@@ -17,7 +17,7 @@ const Education = () => {
 
   return (
     <article className={styles.container}>
-      <h3 className={`${styles.title} ${theme === LIGHT && styles.light}`}>
+      <h3 className={`${styles.title} ${theme === LIGHT ? styles.light : undefined}`}>
         {lang === ES ? 'Educación' : 'Education'}
       </h3>
 
@@ -26,7 +26,7 @@ const Education = () => {
         <img src={education} alt='education' />
 
         <div className={styles.timeline}>
-          <div className={styles.education_box}>
+          {/* <div className={styles.education_box}>
             <span className={styles.degree}>
               {lang === ES && fullstack.es}
               {lang === EN && fullstack.en}
@@ -35,11 +35,11 @@ const Education = () => {
               {lang === ES && fullstackSchool.es}
               {lang === EN && fullstackSchool.en}
             </span>
-            <p className={`${styles.description} ${theme === LIGHT && styles.light}`}>
+            <p className={`${styles.description} ${theme === LIGHT ? styles.light : undefined}`}>
               {lang === ES && fullstackDescription.es}
               {lang === EN && fullstackDescription.en}
             </p>
-          </div>
+          </div> */}
 
           <div className={styles.education_box}>
             <span className={styles.degree}>
@@ -50,7 +50,7 @@ const Education = () => {
               {lang === ES && engineerSchool.es}
               {lang === EN && engineerSchool.en}
             </span>
-            <p className={`${styles.description} ${theme === LIGHT && styles.light}`}>
+            <p className={`${styles.description} ${theme === LIGHT ? styles.light : undefined}`}>
               {lang === ES && engineerDescription.es}
               {lang === EN && engineerDescription.en}
             </p>

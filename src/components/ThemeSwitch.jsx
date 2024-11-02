@@ -3,11 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
 import { useDispatch } from 'react-redux'
 import { changeTheme } from '../redux/slices/UISettingSlice'
-import { LIGHT } from '../config/consts'
+import { LIGHT, ES } from '../config/consts'
 import { useUISettings } from '../hooks/useUISettings'
 
 const ThemeSwitch = () => {
-  const { theme } = useUISettings()
+  const { theme, lang } = useUISettings()
 
   const dispatch = useDispatch()
 
@@ -22,6 +22,7 @@ const ThemeSwitch = () => {
       className={`${styles.switch} ${theme === LIGHT ? styles.light : null}`}
       id='theme-switch'
       onClick={switchTheme}
+      aria-label={`${lang === ES ? 'Cambiar tema' : 'Switch theme'}`}
     >
       <span>
         <FontAwesomeIcon icon={faMoon} />

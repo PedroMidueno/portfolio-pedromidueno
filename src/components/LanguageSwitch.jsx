@@ -17,8 +17,8 @@ const LanguageSwitch = () => {
   return (
     <button
       className={`${styles.switch} 
-            ${lang === EN && styles.english}
-            ${theme === LIGHT && styles.light}`}
+            ${lang === EN ? styles.english : undefined}
+            ${theme === LIGHT ? styles.light : undefined}`}
       onClick={switchLang}
     >
       <div className={styles.flags} id='flags'>

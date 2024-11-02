@@ -9,7 +9,7 @@ const CustomLink = ({ path, children }) => {
 
   return (
     <Link href={path}>
-      <a className={`${styles.link} ${match && styles.active} ${theme === LIGHT && styles.light}`}>
+      <a className={`${styles.link} ${match && styles.active} ${theme === LIGHT ? styles.light : undefined}`}>
         {children}
       </a>
     </Link>

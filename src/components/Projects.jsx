@@ -9,7 +9,7 @@ const Projects = () => {
 
   return (
     <section className={styles.container}>
-      <h3 className={`${styles.title} ${theme === LIGHT && styles.light}`}>
+      <h3 className={`${styles.title} ${theme === LIGHT ? styles.light : undefined}`}>
         {lang === ES ? 'Proyectos' : 'Projects'}
       </h3>
       <section className={styles.projects_container}>
