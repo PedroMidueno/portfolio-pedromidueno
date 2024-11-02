@@ -9,10 +9,10 @@ const Tech = () => {
 
   return (
     <section className={styles.tech}>
-      <h3 className={`${styles.title} ${theme === LIGHT && styles.light}`}>
+      <h2 className={`${styles.title} ${theme === LIGHT && styles.light}`}>
         {lang === ES && tech.es}
         {lang === EN && tech.en}
-      </h3>
+      </h2>
 
       <div className={styles.tech_wrapper}>
         <img src={tailwind} alt='Tailwind CSS logo' title='Tailwind CSS' />
