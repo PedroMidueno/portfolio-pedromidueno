@@ -13,7 +13,7 @@ const Certificates = () => {
       </h3>
       <div className={styles.certificates_container}>
         {certificates.map(cert => {
-          return (
+          return (cert.active &&
             <article key={cert.link} className={styles.cert_card}>
               <a
                 href={cert.link} className={styles.certificate}
